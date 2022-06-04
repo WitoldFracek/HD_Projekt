@@ -42,11 +42,11 @@ FROM TempAllCrime;
 
 SELECT
 	LocationID,
-	AreaName,
+	LOWER(AreaName) AS AreaNameLower,
 	AreaCode,
 	SubareaCode,
-	CAST(Latitude AS NVARCHAR) AS LatStr,
-	CAST(Longitude AS NVARCHAR) AS LonStr
+	CAST(Latitude * 10000 AS INT) AS LatInt,
+	CAST(Longitude * 10000 AS INT) AS LonInt
 FROM DimLocation;
 
 INSERT INTO DimLocation VALUES(1, 'a', 2, 9.33546562532, -7.34323415431);
