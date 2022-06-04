@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="156"
-  DTS:VersionGUID="{342ADF74-480A-4BDE-9081-AA37C457906F}">
+  DTS:VersionBuild="158"
+  DTS:VersionGUID="{796A4B6B-9D14-40E8-B0DD-841A9E70D783}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -7947,6 +7947,7 @@
       DTS:refId="Package\Przerzucenie danych do tymczasowej tabeli lokacji"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{8AEF08D1-A62B-4F67-98FE-9B40C829A9B7}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -8466,7 +8467,6 @@
       DTS:refId="Package\Uzupełnianie tabeli faktu"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{B038BB50-C1E7-40FB-B7E9-3F1F272A2AC0}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -13549,28 +13549,14 @@ where [refTable].[Line] = ?</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT
-	LocationID,
-	LOWER(AreaName) AS AreaNameLower,
-	AreaCode,
-	SubareaCode,
-	CAST(Latitude * 10000 AS INT) AS LatInt,
-	CAST(Longitude * 10000 AS INT) AS LonInt
-FROM DimLocation;</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[TempLocation]</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (SELECT
-	LocationID,
-	LOWER(AreaName) AS AreaNameLower,
-	AreaCode,
-	SubareaCode,
-	CAST(Latitude * 10000 AS INT) AS LatInt,
-	CAST(Longitude * 10000 AS INT) AS LonInt
-FROM DimLocation;) [refTable]
-where [refTable].[AreaCode] = ? and [refTable].[SubareaCode] = ? and [refTable].[LatInt] = ? and [refTable].[LonInt] = ? and [refTable].[AreaNameLower] = ?</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[TempLocation]) [refTable]
+where [refTable].[AreaCode] = ? and [refTable].[AreaName] = ? and [refTable].[SubareaCode] = ? and [refTable].[Latitude] = ? and [refTable].[Longitude] = ?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the type of connection used to access the reference dataset."
@@ -13601,12 +13587,12 @@ where [refTable].[AreaCode] = ? and [refTable].[SubareaCode] = ? and [refTable].
                 <property
                   dataType="System.String"
                   description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="LocationID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AreaNameLower" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AreaCode" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SubareaCode" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LatInt" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LonInt" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="LocationID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AreaCode" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AreaName" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SubareaCode" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Latitude" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Longitude" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                 <property
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Uzupełnianie tabeli faktu\Union (linia).Outputs[Union All Output 1].Columns[AreaCode]};#{Package\Uzupełnianie tabeli faktu\Union (linia).Outputs[Union All Output 1].Columns[SubareaCode]};#{Package\Uzupełnianie tabeli faktu\Dodaj napisy z koordynatów.Outputs[Derived Column Output].Columns[LatStr]};#{Package\Uzupełnianie tabeli faktu\Dodaj napisy z koordynatów.Outputs[Derived Column Output].Columns[LonStr]};#{Package\Uzupełnianie tabeli faktu\1476:invalid};</property>
+                  name="ParameterMap">#{Package\Uzupełnianie tabeli faktu\Union (linia).Outputs[Union All Output 1].Columns[AreaCode]};#{Package\Uzupełnianie tabeli faktu\Union (linia).Outputs[Union All Output 1].Columns[AreaName]};#{Package\Uzupełnianie tabeli faktu\Union (linia).Outputs[Union All Output 1].Columns[SubareaCode]};#{Package\Uzupełnianie tabeli faktu\Dodaj napisy z koordynatów.Outputs[Derived Column Output].Columns[LatStr]};#{Package\Uzupełnianie tabeli faktu\Dodaj napisy z koordynatów.Outputs[Derived Column Output].Columns[LonStr]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -13629,23 +13615,6 @@ where [refTable].[AreaCode] = ? and [refTable].[SubareaCode] = ? and [refTable].
                   refId="Package\Uzupełnianie tabeli faktu\Znajdź lokację.Inputs[Lookup Input]"
                   name="Lookup Input">
                   <inputColumns>
-                    <inputColumn
-                      refId="Package\Uzupełnianie tabeli faktu\Znajdź lokację.Inputs[Lookup Input].Columns[AreaNameLower]"
-                      cachedDataType="wstr"
-                      cachedLength="20"
-                      cachedName="AreaNameLower"
-                      lineageId="Package\Uzupełnianie tabeli faktu\1476:invalid">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">AreaNameLower</property>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn" />
-                      </properties>
-                    </inputColumn>
                     <inputColumn
                       refId="Package\Uzupełnianie tabeli faktu\Znajdź lokację.Inputs[Lookup Input].Columns[AreaCode]"
                       cachedDataType="i4"
@@ -13679,38 +13648,6 @@ where [refTable].[AreaCode] = ? and [refTable].[SubareaCode] = ? and [refTable].
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Uzupełnianie tabeli faktu\Znajdź lokację.Inputs[Lookup Input].Columns[LatStr]"
-                      cachedDataType="i4"
-                      cachedName="LatStr"
-                      lineageId="Package\Uzupełnianie tabeli faktu\Dodaj napisy z koordynatów.Outputs[Derived Column Output].Columns[LatStr]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">LatInt</property>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn" />
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Uzupełnianie tabeli faktu\Znajdź lokację.Inputs[Lookup Input].Columns[LonStr]"
-                      cachedDataType="i4"
-                      cachedName="LonStr"
-                      lineageId="Package\Uzupełnianie tabeli faktu\Dodaj napisy z koordynatów.Outputs[Derived Column Output].Columns[LonStr]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">LonInt</property>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn" />
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
                       refId="Package\Uzupełnianie tabeli faktu\Znajdź lokację.Inputs[Lookup Input].Columns[LocationID]"
                       cachedDataType="i4"
                       cachedName="LocationFK"
@@ -13728,6 +13665,55 @@ where [refTable].[AreaCode] = ? and [refTable].[SubareaCode] = ? and [refTable].
                           dataType="System.String"
                           description="Specifies the column in the reference table from which a column is copied."
                           name="CopyFromReferenceColumn">LocationID</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Uzupełnianie tabeli faktu\Znajdź lokację.Inputs[Lookup Input].Columns[AreaName]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="AreaName"
+                      lineageId="Package\Uzupełnianie tabeli faktu\Union (linia).Outputs[Union All Output 1].Columns[AreaName]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">AreaName</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Uzupełnianie tabeli faktu\Znajdź lokację.Inputs[Lookup Input].Columns[LatStr]"
+                      cachedDataType="i4"
+                      cachedName="LatStr"
+                      lineageId="Package\Uzupełnianie tabeli faktu\Dodaj napisy z koordynatów.Outputs[Derived Column Output].Columns[LatStr]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Latitude</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Uzupełnianie tabeli faktu\Znajdź lokację.Inputs[Lookup Input].Columns[LonStr]"
+                      cachedDataType="i4"
+                      cachedName="LonStr"
+                      lineageId="Package\Uzupełnianie tabeli faktu\Dodaj napisy z koordynatów.Outputs[Derived Column Output].Columns[LonStr]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Longitude</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
                       </properties>
                     </inputColumn>
                   </inputColumns>
@@ -23188,6 +23174,14 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
       DTS:To="Package\Przerzucenie danych do tymczasowej tabeli lokacji" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{64681F0A-D562-48A9-BB3A-1BB9C12AF570}"
+      DTS:From="Package\Przerzucenie danych do tymczasowej tabeli lokacji"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Uzupełnianie tabeli faktu" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -23341,6 +23335,40 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
                     Point3="45,32.5" />
                   <mssgle:LineSegment
                     End="45,49.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="207.5,439">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-63,105"
+              Start="0,0"
+              End="-63,97.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,48.5"
+                    Point2="0,52.5"
+                    Point3="-4,52.5" />
+                  <mssgle:LineSegment
+                    End="-59,52.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-59,52.5"
+                    Point2="-63,52.5"
+                    Point3="-63,56.5" />
+                  <mssgle:LineSegment
+                    End="-63,97.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -24791,9 +24819,7 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="31.25,5,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
@@ -27246,7 +27272,7 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string"></Value>
+          type="q3:string">[dbo].[TempLocation]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
