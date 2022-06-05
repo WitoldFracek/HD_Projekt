@@ -1,0 +1,117 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Model wielowymiarowy projekt</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>oV4XIpGFc5sRpXH7AAE0vOBdNCk=05.06.2022 12:24:4305.06.2022 12:24:43</TimeStamp>
+        <ID>
+          <String>Los Angeles Crime DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>4kelz3M4hFEzbcJEbo+UR9l2dxw=05.06.2022 12:26:3105.06.2022 12:26:30</TimeStamp>
+        <ID>
+          <String>Przestępstwa Los Angeles</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ubKGHfzcyjJOvWYgwEloeMfFpnI=05.06.2022 12:27:4005.06.2022 12:27:40</TimeStamp>
+        <ID>
+          <String>Dim Case</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>GePK0BdbPhiYpXogwtOp118yzMw=05.06.2022 13:04:5405.06.2022 12:29:41</TimeStamp>
+        <ID>
+          <String>Dim Coegzisting Crime</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7VnXE8jWNLYLEd5EfcOSTDhfc80=05.06.2022 12:41:1105.06.2022 12:40:24</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>FKkm7G6VUwliyrAAAPWGUuAYJC8=05.06.2022 12:43:0705.06.2022 12:42:38</TimeStamp>
+        <ID>
+          <String>Dim Location</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>I297Zwxoow0pZBnXpJseNp8vXpQ=05.06.2022 12:44:2505.06.2022 12:44:25</TimeStamp>
+        <ID>
+          <String>Dim Metro Line</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>C9pzVOhulVCDi8T+3l+WuLHa2h0=05.06.2022 12:45:2805.06.2022 12:45:28</TimeStamp>
+        <ID>
+          <String>Dim Premis</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1EgTz6dKhzo5aqMBzn6kmdegm6A=05.06.2022 12:46:3005.06.2022 12:46:29</TimeStamp>
+        <ID>
+          <String>Dim Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2a6Hy4IxeWf8nDS16ZE0dBECooM=05.06.2022 12:47:5405.06.2022 12:47:54</TimeStamp>
+        <ID>
+          <String>Dim Victim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>sxObUsXdHXTmpZxXnpax2wt1QzA=05.06.2022 12:49:1905.06.2022 12:49:19</TimeStamp>
+        <ID>
+          <String>Dim Weapon</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>nTNO7E9+rozbMr++YuqVaDRYBwQ=05.06.2022 13:04:5405.06.2022 12:55:26otw7+NiNdxZONVUEcHAPIY0FbuI=05.06.2022 12:55:2605.06.2022 12:55:26</TimeStamp>
+        <ID>
+          <String>Przestępstwa Los Angeles</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>pkWDj0PcB1KinebqobQ/BiNQ1W8=05.06.2022 12:20:5305.06.2022 12:20:51</TimeStamp>
+      <ID>
+        <String>Model wielowymiarowy projekt</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2022-06-05T11:05:11.116667Z</LastDeployed>
+</DeploymentSnapshot>

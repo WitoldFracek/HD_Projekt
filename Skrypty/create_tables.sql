@@ -54,9 +54,9 @@ CREATE TABLE DimCoegzistingCrime(
 -- DimLocation
 CREATE TABLE DimLocation(
 	LocationID INT IDENTITY(1, 1) PRIMARY KEY,
-	AreaCode INT NOT NULL,
-	AreaName NVARCHAR(20) NOT NULL,
-	SubareaCode INT NOT NULL,
+	AreaCode INT NULL,
+	AreaName NVARCHAR(20),
+	SubareaCode INT NULL,
 	Latitude REAL NULL,
 	Longitude REAL NULL,
 	CONSTRAINT all_u_l UNIQUE(AreaCode, AreaName, SubareaCode, Latitude, Longitude)
@@ -143,6 +143,17 @@ CREATE TABLE [TempAllCrime] (
     [Hour] int,
     [Minute] int,
     [CorrectedTime] time
+);
+
+DROP TABLE IF EXISTS TempLocation;
+CREATE TABLE TempLocation(
+	LocationID INT,
+	AreaCode INT NULL,
+	AreaName NVARCHAR(20),
+	SubareaCode INT NULL,
+	Latitude INT NULL,
+	Longitude INT NULL,
+	CONSTRAINT all_u_tl UNIQUE(AreaCode, AreaName, SubareaCode, Latitude, Longitude)
 );
 
 

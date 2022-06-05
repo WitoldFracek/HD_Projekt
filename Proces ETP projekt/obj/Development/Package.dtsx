@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="158"
-  DTS:VersionGUID="{796A4B6B-9D14-40E8-B0DD-841A9E70D783}">
+  DTS:VersionBuild="160"
+  DTS:VersionGUID="{14D4A10E-C90F-4AB3-94BA-B126D344DDBD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -2430,7 +2430,6 @@
       DTS:refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{4AA801FE-9C80-47F0-820A-F7F586C23E8B}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -7846,54 +7845,54 @@
               startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Oddzielenie niewłaściwych par koordynatów.Outputs[Default]" />
             <path
               refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output9]"
-              endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Oddzielenie niewłaściwych par koordynatów.Inputs[Conditional Split Input]"
+              endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Poprawienie statusu sprawy.Inputs[Derived Column Input]"
               name="Derived Column Output"
-              startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Poprawienie wartości długości i szerokości geograficznej.Outputs[Derived Column Output]" />
+              startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Poprawienie wartości płci.Outputs[Derived Column Output]" />
             <path
               refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output7]"
-              endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Poprawienie wieku ofiary.Inputs[Derived Column Input]"
-              name="Derived Column Output"
-              startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Zamiana NULLi w statusie sprawy.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output6]"
-              endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Wprowadzenie kolumny minuty.Inputs[Derived Column Input]"
-              name="Derived Column Output"
-              startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Wprowadzenie kolumny godziny.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output5]"
-              endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Wprowadznenie kolumny poprawionej daty.Inputs[Derived Column Input]"
-              name="Derived Column Output"
-              startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Wprowadzenie kolumny minuty.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output8]"
-              endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Zapis do tymczasowej tabeli.Inputs[OLE DB Destination Input]"
-              name="Derived Column Output"
-              startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Poprawienie wieku ofiary.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output3]"
-              endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Sprawdzenie poprawności daty.Inputs[Conditional Split Input]"
-              name="Derived Column Output"
-              startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Poprawienie statusu sprawy.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output2]"
-              endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Union (koordynaty).Inputs[Union All Input 2]"
-              name="Derived Column Output"
-              startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Podmiana błędnych koordynatów na NULLe.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output1]"
               endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Union (pochodzenie).Inputs[Union All Input 1]"
               name="Derived Column Output"
               startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Poprawianie symbolu pochodzenia.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output]"
+              refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output6]"
+              endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Union (koordynaty).Inputs[Union All Input 2]"
+              name="Derived Column Output"
+              startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Podmiana błędnych koordynatów na NULLe.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output5]"
+              endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Sprawdzenie poprawności daty.Inputs[Conditional Split Input]"
+              name="Derived Column Output"
+              startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Poprawienie statusu sprawy.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output8]"
               endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Poprawienie wartości długości i szerokości geograficznej.Inputs[Derived Column Input]"
               name="Derived Column Output"
               startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Wprowadznenie kolumny poprawionej daty.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output4]"
-              endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Poprawienie statusu sprawy.Inputs[Derived Column Input]"
+              refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output3]"
+              endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Wprowadznenie kolumny poprawionej daty.Inputs[Derived Column Input]"
               name="Derived Column Output"
-              startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Poprawienie wartości płci.Outputs[Derived Column Output]" />
+              startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Wprowadzenie kolumny minuty.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output2]"
+              endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Wprowadzenie kolumny minuty.Inputs[Derived Column Input]"
+              name="Derived Column Output"
+              startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Wprowadzenie kolumny godziny.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output1]"
+              endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Poprawienie wieku ofiary.Inputs[Derived Column Input]"
+              name="Derived Column Output"
+              startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Zamiana NULLi w statusie sprawy.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output]"
+              endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Oddzielenie niewłaściwych par koordynatów.Inputs[Conditional Split Input]"
+              name="Derived Column Output"
+              startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Poprawienie wartości długości i szerokości geograficznej.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output4]"
+              endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Zapis do tymczasowej tabeli.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Poprawienie wieku ofiary.Outputs[Derived Column Output]" />
             <path
               refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Flat File Source Output]"
               endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Poprawienie wartości płci.Inputs[Derived Column Input]"
@@ -7926,14 +7925,14 @@
               startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Sprawdzenie poprawności daty.Outputs[RepDate GE OccDate]" />
             <path
               refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Union All Output 11]"
-              endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Wprowadzenie kolumny godziny.Inputs[Derived Column Input]"
-              name="Union All Output 1"
-              startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Union (data).Outputs[Union All Output 1]" />
-            <path
-              refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Union All Output 1]"
               endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Oddzielenie niewłaściwych symboli pochodzenia.Inputs[Conditional Split Input]"
               name="Union All Output 1"
               startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Union (koordynaty).Outputs[Union All Output 1]" />
+            <path
+              refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Union All Output 1]"
+              endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Wprowadzenie kolumny godziny.Inputs[Derived Column Input]"
+              name="Union All Output 1"
+              startId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Union (data).Outputs[Union All Output 1]" />
             <path
               refId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Union All Output 12]"
               endId="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów\Zamiana NULLi w statusie sprawy.Inputs[Derived Column Input]"
@@ -7947,7 +7946,6 @@
       DTS:refId="Package\Przerzucenie danych do tymczasowej tabeli lokacji"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{8AEF08D1-A62B-4F67-98FE-9B40C829A9B7}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -8449,7 +8447,6 @@
       DTS:refId="Package\Tworzenie tabel tymczasowych"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{916BB1E8-085F-4E66-B512-CB7AAA40ECE9}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -13724,7 +13721,7 @@ where [refTable].[AreaCode] = ? and [refTable].[AreaName] = ? and [refTable].[Su
                 <output
                   refId="Package\Uzupełnianie tabeli faktu\Znajdź lokację.Outputs[Lookup Match Output]"
                   errorOrTruncationOperation="Lookup"
-                  errorRowDisposition="FailComponent"
+                  errorRowDisposition="IgnoreFailure"
                   exclusionGroup="1"
                   name="Lookup Match Output"
                   synchronousInputId="Package\Uzupełnianie tabeli faktu\Znajdź lokację.Inputs[Lookup Input]">
@@ -14718,39 +14715,39 @@ where [refTable].[CaseStatus] = ?</property>
               startId="Package\Uzupełnianie tabeli faktu\Sprawdzanie czy jest linią.Outputs[Jest linią]" />
             <path
               refId="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output14]"
-              endId="Package\Uzupełnianie tabeli faktu\Znajdź przestępstwa współistniejące.Inputs[Lookup Input]"
+              endId="Package\Uzupełnianie tabeli faktu\Znajdź miejsce przestępstwa.Inputs[Lookup Input]"
               name="Lookup Match Output"
-              startId="Package\Uzupełnianie tabeli faktu\Znajdź linię metra.Outputs[Lookup Match Output]" />
+              startId="Package\Uzupełnianie tabeli faktu\Znajdź lokację.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output13]"
-              endId="Package\Uzupełnianie tabeli faktu\Dodaj napisy z koordynatów.Inputs[Derived Column Input]"
+              endId="Package\Uzupełnianie tabeli faktu\Znajdź linię metra.Inputs[Lookup Input]"
               name="Lookup Match Output"
-              startId="Package\Uzupełnianie tabeli faktu\Znajdź przypadek.Outputs[Lookup Match Output]" />
+              startId="Package\Uzupełnianie tabeli faktu\Znajdź kod 4.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output12]"
-              endId="Package\Uzupełnianie tabeli faktu\Znajdź przypadek.Inputs[Lookup Input]"
+              endId="Package\Uzupełnianie tabeli faktu\Czy linia metra.Inputs[Conditional Split Input]"
               name="Lookup Match Output"
-              startId="Package\Uzupełnianie tabeli faktu\Znajdź broń.Outputs[Lookup Match Output]" />
+              startId="Package\Uzupełnianie tabeli faktu\Znajdź nazwę linii.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output11]"
-              endId="Package\Uzupełnianie tabeli faktu\Znajdź broń.Inputs[Lookup Input]"
+              endId="Package\Uzupełnianie tabeli faktu\Znajdź kod 2.Inputs[Lookup Input]"
               name="Lookup Match Output"
-              startId="Package\Uzupełnianie tabeli faktu\Znajdź ofiarę.Outputs[Lookup Match Output]" />
+              startId="Package\Uzupełnianie tabeli faktu\Znajdź kod 1.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output10]"
-              endId="Package\Uzupełnianie tabeli faktu\Znajdź ofiarę.Inputs[Lookup Input]"
+              endId="Package\Uzupełnianie tabeli faktu\Znajdź kod 3.Inputs[Lookup Input]"
               name="Lookup Match Output"
-              startId="Package\Uzupełnianie tabeli faktu\Znajdź datę zaraportowania.Outputs[Lookup Match Output]" />
+              startId="Package\Uzupełnianie tabeli faktu\Znajdź kod 2.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output9]"
-              endId="Package\Uzupełnianie tabeli faktu\Znajdź datę zaraportowania.Inputs[Lookup Input]"
+              endId="Package\Uzupełnianie tabeli faktu\Tabela faktu.Inputs[OLE DB Destination Input]"
               name="Lookup Match Output"
-              startId="Package\Uzupełnianie tabeli faktu\Znajdź datę wystąpienia.Outputs[Lookup Match Output]" />
+              startId="Package\Uzupełnianie tabeli faktu\Znajdź miejsce przestępstwa.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output8]"
-              endId="Package\Uzupełnianie tabeli faktu\Znajdź datę wystąpienia.Inputs[Lookup Input]"
+              endId="Package\Uzupełnianie tabeli faktu\Znajdź kod 4.Inputs[Lookup Input]"
               name="Lookup Match Output"
-              startId="Package\Uzupełnianie tabeli faktu\Znajdź czas.Outputs[Lookup Match Output]" />
+              startId="Package\Uzupełnianie tabeli faktu\Znajdź kod 3.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output7]"
               endId="Package\Uzupełnianie tabeli faktu\Znajdź czas.Inputs[Lookup Input]"
@@ -14758,39 +14755,39 @@ where [refTable].[CaseStatus] = ?</property>
               startId="Package\Uzupełnianie tabeli faktu\Znajdź przestępstwa współistniejące.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output6]"
-              endId="Package\Uzupełnianie tabeli faktu\Znajdź kod 4.Inputs[Lookup Input]"
+              endId="Package\Uzupełnianie tabeli faktu\Znajdź datę wystąpienia.Inputs[Lookup Input]"
               name="Lookup Match Output"
-              startId="Package\Uzupełnianie tabeli faktu\Znajdź kod 3.Outputs[Lookup Match Output]" />
+              startId="Package\Uzupełnianie tabeli faktu\Znajdź czas.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output5]"
-              endId="Package\Uzupełnianie tabeli faktu\Tabela faktu.Inputs[OLE DB Destination Input]"
+              endId="Package\Uzupełnianie tabeli faktu\Znajdź datę zaraportowania.Inputs[Lookup Input]"
               name="Lookup Match Output"
-              startId="Package\Uzupełnianie tabeli faktu\Znajdź miejsce przestępstwa.Outputs[Lookup Match Output]" />
+              startId="Package\Uzupełnianie tabeli faktu\Znajdź datę wystąpienia.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output4]"
-              endId="Package\Uzupełnianie tabeli faktu\Znajdź kod 3.Inputs[Lookup Input]"
+              endId="Package\Uzupełnianie tabeli faktu\Znajdź ofiarę.Inputs[Lookup Input]"
               name="Lookup Match Output"
-              startId="Package\Uzupełnianie tabeli faktu\Znajdź kod 2.Outputs[Lookup Match Output]" />
+              startId="Package\Uzupełnianie tabeli faktu\Znajdź datę zaraportowania.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output3]"
-              endId="Package\Uzupełnianie tabeli faktu\Znajdź kod 2.Inputs[Lookup Input]"
+              endId="Package\Uzupełnianie tabeli faktu\Znajdź broń.Inputs[Lookup Input]"
               name="Lookup Match Output"
-              startId="Package\Uzupełnianie tabeli faktu\Znajdź kod 1.Outputs[Lookup Match Output]" />
+              startId="Package\Uzupełnianie tabeli faktu\Znajdź ofiarę.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output2]"
-              endId="Package\Uzupełnianie tabeli faktu\Czy linia metra.Inputs[Conditional Split Input]"
+              endId="Package\Uzupełnianie tabeli faktu\Znajdź przypadek.Inputs[Lookup Input]"
               name="Lookup Match Output"
-              startId="Package\Uzupełnianie tabeli faktu\Znajdź nazwę linii.Outputs[Lookup Match Output]" />
+              startId="Package\Uzupełnianie tabeli faktu\Znajdź broń.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output1]"
-              endId="Package\Uzupełnianie tabeli faktu\Znajdź linię metra.Inputs[Lookup Input]"
+              endId="Package\Uzupełnianie tabeli faktu\Dodaj napisy z koordynatów.Inputs[Derived Column Input]"
               name="Lookup Match Output"
-              startId="Package\Uzupełnianie tabeli faktu\Znajdź kod 4.Outputs[Lookup Match Output]" />
+              startId="Package\Uzupełnianie tabeli faktu\Znajdź przypadek.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output]"
-              endId="Package\Uzupełnianie tabeli faktu\Znajdź miejsce przestępstwa.Inputs[Lookup Input]"
+              endId="Package\Uzupełnianie tabeli faktu\Znajdź przestępstwa współistniejące.Inputs[Lookup Input]"
               name="Lookup Match Output"
-              startId="Package\Uzupełnianie tabeli faktu\Znajdź lokację.Outputs[Lookup Match Output]" />
+              startId="Package\Uzupełnianie tabeli faktu\Znajdź linię metra.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Uzupełnianie tabeli faktu.Paths[Nie]"
               endId="Package\Uzupełnianie tabeli faktu\Podmiana linii na NULL.Inputs[Derived Column Input]"
@@ -14829,7 +14826,6 @@ where [refTable].[CaseStatus] = ?</property>
       DTS:refId="Package\Zapis do wymiarów"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{FB33D167-26E3-4178-AD7A-BC35D2A5D6FE}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -21250,64 +21246,64 @@ where [refTable].[VictimDescent] = ?</property>
               startId="Package\Zapis do wymiarów\Sprawdzanie linii metra.Outputs[Jest linią]" />
             <path
               refId="Package\Zapis do wymiarów.Paths[Lookup Match Output8]"
-              endId="Package\Zapis do wymiarów\Powtórzone bronie.Inputs[Flat File Destination Input]"
-              name="Lookup Match Output"
-              startId="Package\Zapis do wymiarów\Znajdź istniejące bronie.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Zapis do wymiarów.Paths[Lookup Match Output7]"
-              endId="Package\Zapis do wymiarów\Powtórzone miejsca przestępstwa.Inputs[Flat File Destination Input]"
-              name="Lookup Match Output"
-              startId="Package\Zapis do wymiarów\Znajdź istniejące miejsca przestępstwa.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Zapis do wymiarów.Paths[Lookup Match Output6]"
-              endId="Package\Zapis do wymiarów\Powtózone lokacje.Inputs[Flat File Destination Input]"
-              name="Lookup Match Output"
-              startId="Package\Zapis do wymiarów\Znajdź istniejące lokacje.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Zapis do wymiarów.Paths[Lookup Match Output5]"
-              endId="Package\Zapis do wymiarów\Powtórzone dane ofiar.Inputs[Flat File Destination Input]"
-              name="Lookup Match Output"
-              startId="Package\Zapis do wymiarów\Znajdź istniejące ofiary.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Zapis do wymiarów.Paths[Lookup Match Output1]"
-              endId="Package\Zapis do wymiarów\Unikalne ofiary.Inputs[Aggregate Input 1]"
-              name="Lookup Match Output"
-              startId="Package\Zapis do wymiarów\Znajdź opis pochodzenia.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Zapis do wymiarów.Paths[Lookup Match Output3]"
-              endId="Package\Zapis do wymiarów\Czy linia metra.Inputs[Conditional Split Input]"
-              name="Lookup Match Output"
-              startId="Package\Zapis do wymiarów\Znajdź nazwę linii.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Zapis do wymiarów.Paths[Lookup Match Output2]"
-              endId="Package\Zapis do wymiarów\Powtórzone linie.Inputs[Flat File Destination Input]"
-              name="Lookup Match Output"
-              startId="Package\Zapis do wymiarów\Znajdź istniejące linie.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Zapis do wymiarów.Paths[Lookup Match Output]"
-              endId="Package\Zapis do wymiarów\Powtórzone opisy przestępstwa.Inputs[Flat File Destination Input]"
-              name="Lookup Match Output"
-              startId="Package\Zapis do wymiarów\Znajdź istniejące opisy przestępstwa.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Zapis do wymiarów.Paths[Lookup Match Output4]"
               endId="Package\Zapis do wymiarów\Powtórzone sprawy.Inputs[Flat File Destination Input]"
               name="Lookup Match Output"
               startId="Package\Zapis do wymiarów\Znajdź istniejące sprawy.Outputs[Lookup Match Output]" />
             <path
+              refId="Package\Zapis do wymiarów.Paths[Lookup Match Output7]"
+              endId="Package\Zapis do wymiarów\Powtórzone opisy przestępstwa.Inputs[Flat File Destination Input]"
+              name="Lookup Match Output"
+              startId="Package\Zapis do wymiarów\Znajdź istniejące opisy przestępstwa.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Zapis do wymiarów.Paths[Lookup Match Output6]"
+              endId="Package\Zapis do wymiarów\Powtórzone linie.Inputs[Flat File Destination Input]"
+              name="Lookup Match Output"
+              startId="Package\Zapis do wymiarów\Znajdź istniejące linie.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Zapis do wymiarów.Paths[Lookup Match Output5]"
+              endId="Package\Zapis do wymiarów\Czy linia metra.Inputs[Conditional Split Input]"
+              name="Lookup Match Output"
+              startId="Package\Zapis do wymiarów\Znajdź nazwę linii.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Zapis do wymiarów.Paths[Lookup Match Output1]"
+              endId="Package\Zapis do wymiarów\Powtórzone miejsca przestępstwa.Inputs[Flat File Destination Input]"
+              name="Lookup Match Output"
+              startId="Package\Zapis do wymiarów\Znajdź istniejące miejsca przestępstwa.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Zapis do wymiarów.Paths[Lookup Match Output3]"
+              endId="Package\Zapis do wymiarów\Powtórzone dane ofiar.Inputs[Flat File Destination Input]"
+              name="Lookup Match Output"
+              startId="Package\Zapis do wymiarów\Znajdź istniejące ofiary.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Zapis do wymiarów.Paths[Lookup Match Output2]"
+              endId="Package\Zapis do wymiarów\Powtózone lokacje.Inputs[Flat File Destination Input]"
+              name="Lookup Match Output"
+              startId="Package\Zapis do wymiarów\Znajdź istniejące lokacje.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Zapis do wymiarów.Paths[Lookup Match Output]"
+              endId="Package\Zapis do wymiarów\Powtórzone bronie.Inputs[Flat File Destination Input]"
+              name="Lookup Match Output"
+              startId="Package\Zapis do wymiarów\Znajdź istniejące bronie.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Zapis do wymiarów.Paths[Lookup Match Output4]"
+              endId="Package\Zapis do wymiarów\Unikalne ofiary.Inputs[Aggregate Input 1]"
+              name="Lookup Match Output"
+              startId="Package\Zapis do wymiarów\Znajdź opis pochodzenia.Outputs[Lookup Match Output]" />
+            <path
               refId="Package\Zapis do wymiarów.Paths[Lookup No Match Output5]"
-              endId="Package\Zapis do wymiarów\Tabela linii.Inputs[OLE DB Destination Input]"
+              endId="Package\Zapis do wymiarów\Tabela miejsc przesstępstwa.Inputs[OLE DB Destination Input]"
               name="Lookup No Match Output"
-              startId="Package\Zapis do wymiarów\Znajdź istniejące linie.Outputs[Lookup No Match Output]" />
+              startId="Package\Zapis do wymiarów\Znajdź istniejące miejsca przestępstwa.Outputs[Lookup No Match Output]" />
             <path
               refId="Package\Zapis do wymiarów.Paths[Lookup No Match Output6]"
-              endId="Package\Zapis do wymiarów\Tabela spraw.Inputs[OLE DB Destination Input]"
+              endId="Package\Zapis do wymiarów\Tabela lokacji.Inputs[OLE DB Destination Input]"
               name="Lookup No Match Output"
-              startId="Package\Zapis do wymiarów\Znajdź istniejące sprawy.Outputs[Lookup No Match Output]" />
+              startId="Package\Zapis do wymiarów\Znajdź istniejące lokacje.Outputs[Lookup No Match Output]" />
             <path
               refId="Package\Zapis do wymiarów.Paths[Lookup No Match Output4]"
-              endId="Package\Zapis do wymiarów\Tabela opisów przestępstw.Inputs[OLE DB Destination Input]"
+              endId="Package\Zapis do wymiarów\Tabela ofiar.Inputs[OLE DB Destination Input]"
               name="Lookup No Match Output"
-              startId="Package\Zapis do wymiarów\Znajdź istniejące opisy przestępstwa.Outputs[Lookup No Match Output]" />
+              startId="Package\Zapis do wymiarów\Znajdź istniejące ofiary.Outputs[Lookup No Match Output]" />
             <path
               refId="Package\Zapis do wymiarów.Paths[Lookup No Match Output3]"
               endId="Package\Zapis do wymiarów\Tabela broni.Inputs[OLE DB Destination Input]"
@@ -21315,19 +21311,19 @@ where [refTable].[VictimDescent] = ?</property>
               startId="Package\Zapis do wymiarów\Znajdź istniejące bronie.Outputs[Lookup No Match Output]" />
             <path
               refId="Package\Zapis do wymiarów.Paths[Lookup No Match Output2]"
-              endId="Package\Zapis do wymiarów\Tabela ofiar.Inputs[OLE DB Destination Input]"
+              endId="Package\Zapis do wymiarów\Tabela opisów przestępstw.Inputs[OLE DB Destination Input]"
               name="Lookup No Match Output"
-              startId="Package\Zapis do wymiarów\Znajdź istniejące ofiary.Outputs[Lookup No Match Output]" />
+              startId="Package\Zapis do wymiarów\Znajdź istniejące opisy przestępstwa.Outputs[Lookup No Match Output]" />
             <path
               refId="Package\Zapis do wymiarów.Paths[Lookup No Match Output1]"
-              endId="Package\Zapis do wymiarów\Tabela miejsc przesstępstwa.Inputs[OLE DB Destination Input]"
+              endId="Package\Zapis do wymiarów\Tabela spraw.Inputs[OLE DB Destination Input]"
               name="Lookup No Match Output"
-              startId="Package\Zapis do wymiarów\Znajdź istniejące miejsca przestępstwa.Outputs[Lookup No Match Output]" />
+              startId="Package\Zapis do wymiarów\Znajdź istniejące sprawy.Outputs[Lookup No Match Output]" />
             <path
               refId="Package\Zapis do wymiarów.Paths[Lookup No Match Output]"
-              endId="Package\Zapis do wymiarów\Tabela lokacji.Inputs[OLE DB Destination Input]"
+              endId="Package\Zapis do wymiarów\Tabela linii.Inputs[OLE DB Destination Input]"
               name="Lookup No Match Output"
-              startId="Package\Zapis do wymiarów\Znajdź istniejące lokacje.Outputs[Lookup No Match Output]" />
+              startId="Package\Zapis do wymiarów\Znajdź istniejące linie.Outputs[Lookup No Match Output]" />
             <path
               refId="Package\Zapis do wymiarów.Paths[Multicast Output 1]"
               endId="Package\Zapis do wymiarów\Sprawdzanie linii metra.Inputs[Conditional Split Input]"
@@ -21426,7 +21422,6 @@ where [refTable].[VictimDescent] = ?</property>
       DTS:refId="Package\Zapis dodatkowych tabel wymiarów"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{1308949E-80DD-4D5B-8457-0473F0E770F1}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -23200,6 +23195,10 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów"
           TopLeft="19.333333333333,116.555555555556" />
         <NodeLayout
+          Size="315,42"
+          Id="Package\Przerzucenie danych do tymczasowej tabeli lokacji"
+          TopLeft="50,397" />
+        <NodeLayout
           Size="225,42"
           Id="Package\Tworzenie tabel tymczasowych"
           TopLeft="38,32" />
@@ -23305,10 +23304,6 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="315,42"
-          Id="Package\Przerzucenie danych do tymczasowej tabeli lokacji"
-          TopLeft="50,397" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
           TopLeft="162.5,340">
@@ -23485,6 +23480,28 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Union All Output 1]"
+          TopLeft="170,166.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="48,0"
+              Start="0,0"
+              End="40.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="40.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Union All Output 11]"
           TopLeft="868,378">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -23509,28 +23526,6 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
                     Point3="-613,16.5" />
                   <mssgle:LineSegment
                     End="-613,17.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Union All Output 11]"
-          TopLeft="170,166.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="48,0"
-              Start="0,0"
-              End="40.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="40.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23743,128 +23738,6 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output]"
-          TopLeft="909,179">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-637.5,67"
-              Start="0,0"
-              End="-637.5,59.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,29.5"
-                    Point2="0,33.5"
-                    Point3="-4,33.5" />
-                  <mssgle:LineSegment
-                    End="-633.5,33.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-633.5,33.5"
-                    Point2="-637.5,33.5"
-                    Point3="-637.5,37.5" />
-                  <mssgle:LineSegment
-                    End="-637.5,59.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output4]"
-          TopLeft="436,47.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="77,0"
-              Start="0,0"
-              End="69.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="69.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output1]"
-          TopLeft="302,513.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="88,0"
-              Start="0,0"
-              End="80.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="80.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output2]"
-          TopLeft="735,355.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="48,0"
-              Start="0,0"
-              End="40.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="40.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output3]"
-          TopLeft="723,50">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="53,0"
-              Start="0,0"
-              End="45.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="45.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output9]"
           TopLeft="443,266.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -23886,19 +23759,19 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output5]"
-          TopLeft="724,160.5">
+          Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output4]"
+          TopLeft="270,594.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="44,0"
+              EndConnector="127,0"
               Start="0,0"
-              End="36.5,0">
+              End="119.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="36.5,0" />
+                    End="119.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23908,29 +23781,7 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output6]"
-          TopLeft="448,164.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="50,0"
-              Start="0,0"
-              End="42.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="42.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output7]"
+          Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output1]"
           TopLeft="802.5,536">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -23964,19 +23815,163 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output8]"
-          TopLeft="270,594.5">
+          Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output2]"
+          TopLeft="448,164.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="127,0"
+              EndConnector="50,0"
               Start="0,0"
-              End="119.5,0">
+              End="42.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="119.5,0" />
+                    End="42.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output3]"
+          TopLeft="724,160.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="44,0"
+              Start="0,0"
+              End="36.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="36.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output9]"
+          TopLeft="436,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="77,0"
+              Start="0,0"
+              End="69.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="69.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output5]"
+          TopLeft="723,50">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="53,0"
+              Start="0,0"
+              End="45.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="45.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output6]"
+          TopLeft="735,355.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="48,0"
+              Start="0,0"
+              End="40.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="40.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output7]"
+          TopLeft="302,513.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="88,0"
+              Start="0,0"
+              End="80.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="80.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przeniesienie danych z CSV do tabeli tymczasowej i wymiarów.Paths[Derived Column Output8]"
+          TopLeft="909,179">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-637.5,67"
+              Start="0,0"
+              End="-637.5,59.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.5"
+                    Point2="0,33.5"
+                    Point3="-4,33.5" />
+                  <mssgle:LineSegment
+                    End="-633.5,33.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-633.5,33.5"
+                    Point2="-637.5,33.5"
+                    Point3="-637.5,37.5" />
+                  <mssgle:LineSegment
+                    End="-637.5,59.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -24068,6 +24063,120 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\Przerzucenie danych do tymczasowej tabeli lokacji">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="145,42"
+          Id="Package\Przerzucenie danych do tymczasowej tabeli lokacji\TempLocation"
+          TopLeft="72,221" />
+        <NodeLayout
+          Size="137,42"
+          Id="Package\Przerzucenie danych do tymczasowej tabeli lokacji\DimLocation"
+          TopLeft="83,33" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Przerzucenie danych do tymczasowej tabeli lokacji\Lat i Lon jako int"
+          TopLeft="89,118" />
+        <EdgeLayout
+          Id="Package\Przerzucenie danych do tymczasowej tabeli lokacji.Paths[OLE DB Source Output]"
+          TopLeft="151.5,75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="16.5,43"
+              Start="0,0"
+              End="16.5,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.5"
+                    Point2="0,21.5"
+                    Point3="4,21.5" />
+                  <mssgle:LineSegment
+                    End="12.5,21.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="12.5,21.5"
+                    Point2="16.5,21.5"
+                    Point3="16.5,25.5" />
+                  <mssgle:LineSegment
+                    End="16.5,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przerzucenie danych do tymczasowej tabeli lokacji.Paths[Derived Column Output]"
+          TopLeft="168,160">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-23.5,61"
+              Start="0,0"
+              End="-23.5,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.5"
+                    Point2="0,30.5"
+                    Point3="-4,30.5" />
+                  <mssgle:LineSegment
+                    End="-19.5,30.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-19.5,30.5"
+                    Point2="-23.5,30.5"
+                    Point3="-23.5,34.5" />
+                  <mssgle:LineSegment
+                    End="-23.5,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Przerzucenie danych do tymczasowej tabeli lokacji\TempLocation">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Przerzucenie danych do tymczasowej tabeli lokacji\DimLocation">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\Uzupełnianie tabeli faktu">
     <LayoutInfo>
       <GraphLayout
@@ -24081,21 +24190,21 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           Id="Package\Uzupełnianie tabeli faktu\Znajdź ofiarę"
           TopLeft="60,565" />
         <NodeLayout
+          Size="146,42"
+          Id="Package\Uzupełnianie tabeli faktu\Znajdź lokację"
+          TopLeft="347,681" />
+        <NodeLayout
           Size="193,42"
           Id="Package\Uzupełnianie tabeli faktu\Znajdź datę wystąpienia"
           TopLeft="310,469" />
         <NodeLayout
-          Size="260,42"
-          Id="Package\Uzupełnianie tabeli faktu\Dodawanie kolumn klusczy sztucznych"
-          TopLeft="31,138" />
-        <NodeLayout
-          Size="180,42"
-          Id="Package\Uzupełnianie tabeli faktu\Dodanie kolumny linii"
-          TopLeft="318,33" />
-        <NodeLayout
           Size="140,42"
           Id="Package\Uzupełnianie tabeli faktu\Znajdź kod 2"
           TopLeft="614,274" />
+        <NodeLayout
+          Size="260,42"
+          Id="Package\Uzupełnianie tabeli faktu\Dodawanie kolumn klusczy sztucznych"
+          TopLeft="31,138" />
         <NodeLayout
           Size="162,42"
           Id="Package\Uzupełnianie tabeli faktu\Znajdź przypadek"
@@ -24113,53 +24222,91 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           Id="Package\Uzupełnianie tabeli faktu\Znajdź czas"
           TopLeft="64,463" />
         <NodeLayout
-          Size="211,42"
-          Id="Package\Uzupełnianie tabeli faktu\Dodanie kodów przestępstw"
-          TopLeft="52,237" />
-        <NodeLayout
-          Size="250,42"
-          Id="Package\Uzupełnianie tabeli faktu\Znajdź przestępstwa współistniejące"
-          TopLeft="664,386" />
+          Size="138,42"
+          Id="Package\Uzupełnianie tabeli faktu\Tabela faktu"
+          TopLeft="81,775" />
         <NodeLayout
           Size="140,42"
           Id="Package\Uzupełnianie tabeli faktu\Znajdź kod 1"
           TopLeft="361,238" />
         <NodeLayout
-          Size="212,42"
-          Id="Package\Uzupełnianie tabeli faktu\Dodaj napisy z koordynatów"
-          TopLeft="49,679" />
+          Size="211,42"
+          Id="Package\Uzupełnianie tabeli faktu\Dodanie kodów przestępstw"
+          TopLeft="52,237" />
         <NodeLayout
           Size="199,42"
           Id="Package\Uzupełnianie tabeli faktu\Sprawdzanie czy jest linią"
           TopLeft="555,36" />
         <NodeLayout
+          Size="214,42"
+          Id="Package\Uzupełnianie tabeli faktu\Znajdź miejsce przestępstwa"
+          TopLeft="617,688" />
+        <NodeLayout
           Size="140,42"
           Id="Package\Uzupełnianie tabeli faktu\Znajdź kod 4"
           TopLeft="59,377" />
         <NodeLayout
-          Size="135,42"
-          Id="Package\Uzupełnianie tabeli faktu\Znajdź broń"
-          TopLeft="283,569" />
+          Size="250,42"
+          Id="Package\Uzupełnianie tabeli faktu\Znajdź przestępstwa współistniejące"
+          TopLeft="664,386" />
+        <NodeLayout
+          Size="212,42"
+          Id="Package\Uzupełnianie tabeli faktu\Dodaj napisy z koordynatów"
+          TopLeft="49,679" />
         <NodeLayout
           Size="187,42"
           Id="Package\Uzupełnianie tabeli faktu\Podmiana linii na NULL"
           TopLeft="636,128" />
         <NodeLayout
-          Size="210,42"
-          Id="Package\Uzupełnianie tabeli faktu\Znajdź datę zaraportowania"
-          TopLeft="651,472" />
-        <NodeLayout
-          Size="149,42"
-          Id="Package\Uzupełnianie tabeli faktu\Czy linia metra"
-          TopLeft="811,198" />
-        <NodeLayout
           Size="204,42"
           Id="Package\Uzupełnianie tabeli faktu\Dane z tabeli tymczasowej"
           TopLeft="55,31" />
         <NodeLayout
+          Size="135,42"
+          Id="Package\Uzupełnianie tabeli faktu\Znajdź broń"
+          TopLeft="283,569" />
+        <NodeLayout
+          Size="210,42"
+          Id="Package\Uzupełnianie tabeli faktu\Znajdź datę zaraportowania"
+          TopLeft="651,472" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Uzupełnianie tabeli faktu\Flat File Destination"
+          TopLeft="323,782" />
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Uzupełnianie tabeli faktu\Dodanie kolumny linii"
+          TopLeft="318,33" />
+        <NodeLayout
           Size="140,42"
           Id="Package\Uzupełnianie tabeli faktu\Znajdź kod 3"
           TopLeft="820,278" />
+        <NodeLayout
+          Size="149,42"
+          Id="Package\Uzupełnianie tabeli faktu\Czy linia metra"
+          TopLeft="811,198" />
+        <EdgeLayout
+          Id="Package\Uzupełnianie tabeli faktu.Paths[Derived Column Output2]"
+          TopLeft="159.25,180">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,57"
+              Start="0,0"
+              End="0,49.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Uzupełnianie tabeli faktu.Paths[Derived Column Output1]"
           TopLeft="636,152.166666666667">
@@ -24285,6 +24432,30 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Uzupełnianie tabeli faktu.Paths[OLE DB Destination Error Output]"
+          TopLeft="219,799.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="104,0"
+              Start="0,0"
+              End="96.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="96.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-24.95890625,5,146.4178125,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Uzupełnianie tabeli faktu.Paths[Nie jest linią]"
           TopLeft="654.5,78">
           <EdgeLayout.Curve>
@@ -24357,151 +24528,7 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output1]"
-          TopLeft="199,400.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="181,0"
-              Start="0,0"
-              End="173.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="173.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="38.55861328125,5,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output2]"
-          TopLeft="884.25,77">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,121"
-              Start="0,0"
-              End="0,113.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,113.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,50.9453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output3]"
-          TopLeft="501,259">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="113,36"
-              Start="0,0"
-              End="105.5,36">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="52.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="52.5,0"
-                    Point2="56.5,0"
-                    Point3="56.5,4" />
-                  <mssgle:LineSegment
-                    End="56.5,32" />
-                  <mssgle:CubicBezierSegment
-                    Point1="56.5,32"
-                    Point2="56.5,36"
-                    Point3="60.5,36" />
-                  <mssgle:LineSegment
-                    End="105.5,36" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="8.30861328125,-17.609375,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output4]"
-          TopLeft="754,297">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="66,0"
-              Start="0,0"
-              End="58.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="58.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-18.94138671875,5,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output6]"
-          TopLeft="890,320">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-761,57"
-              Start="0,0"
-              End="-761,49.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,24.5"
-                    Point2="0,28.5"
-                    Point3="-4,28.5" />
-                  <mssgle:LineSegment
-                    End="-757,28.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-757,28.5"
-                    Point2="-761,28.5"
-                    Point3="-761,32.5" />
-                  <mssgle:LineSegment
-                    End="-761,49.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-428.69138671875,33.5,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output14]"
+          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output]"
           TopLeft="543,405">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -24521,6 +24548,174 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="8.55861328125,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output1]"
+          TopLeft="609,617">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-454,62"
+              Start="0,0"
+              End="-454,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27"
+                    Point2="0,31"
+                    Point3="-4,31" />
+                  <mssgle:LineSegment
+                    End="-450,31" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-450,31"
+                    Point2="-454,31"
+                    Point3="-454,35" />
+                  <mssgle:LineSegment
+                    End="-454,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-275.19138671875,36,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output2]"
+          TopLeft="418,593">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="110,0"
+              Start="0,0"
+              End="102.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="102.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="3.05861328125,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output3]"
+          TopLeft="200,588">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="83,0"
+              Start="0,0"
+              End="75.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="75.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-10.44138671875,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output4]"
+          TopLeft="756,514">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-626,51"
+              Start="0,0"
+              End="-626,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.5"
+                    Point2="0,25.5"
+                    Point3="-4,25.5" />
+                  <mssgle:LineSegment
+                    End="-622,25.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-622,25.5"
+                    Point2="-626,25.5"
+                    Point3="-626,29.5" />
+                  <mssgle:LineSegment
+                    End="-626,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-361.19138671875,30.5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output5]"
+          TopLeft="503,491.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="148,0"
+              Start="0,0"
+              End="140.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="140.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="22.05861328125,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output6]"
+          TopLeft="198,487">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="112,0"
+              Start="0,0"
+              End="104.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="104.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="4.05861328125,5,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -24562,300 +24757,42 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output8]"
-          TopLeft="198,487">
+          TopLeft="890,320">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="112,0"
+              EndConnector="-761,57"
               Start="0,0"
-              End="104.5,0">
+              End="-761,49.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="104.5,0" />
+                    End="0,24.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.5"
+                    Point2="0,28.5"
+                    Point3="-4,28.5" />
+                  <mssgle:LineSegment
+                    End="-757,28.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-757,28.5"
+                    Point2="-761,28.5"
+                    Point3="-761,32.5" />
+                  <mssgle:LineSegment
+                    End="-761,49.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="4.05861328125,5,96.3827734375,11.609375"
+              BoundingBox="-428.69138671875,33.5,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output9]"
-          TopLeft="503,491.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="148,0"
-              Start="0,0"
-              End="140.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="140.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="22.05861328125,5,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output10]"
-          TopLeft="756,514">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-626,51"
-              Start="0,0"
-              End="-626,43.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21.5"
-                    Point2="0,25.5"
-                    Point3="-4,25.5" />
-                  <mssgle:LineSegment
-                    End="-622,25.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-622,25.5"
-                    Point2="-626,25.5"
-                    Point3="-626,29.5" />
-                  <mssgle:LineSegment
-                    End="-626,43.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-361.19138671875,30.5,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output11]"
-          TopLeft="200,588">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="83,0"
-              Start="0,0"
-              End="75.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="75.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-10.44138671875,5,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output12]"
-          TopLeft="418,593">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="110,0"
-              Start="0,0"
-              End="102.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="102.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="3.05861328125,5,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output13]"
-          TopLeft="609,617">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-454,62"
-              Start="0,0"
-              End="-454,54.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,27"
-                    Point2="0,31"
-                    Point3="-4,31" />
-                  <mssgle:LineSegment
-                    End="-450,31" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-450,31"
-                    Point2="-454,31"
-                    Point3="-454,35" />
-                  <mssgle:LineSegment
-                    End="-454,54.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-275.19138671875,36,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Uzupełnianie tabeli faktu.Paths[Jest linią]"
-          TopLeft="754,56.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="48,0"
-              Start="0,0"
-              End="40.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="40.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0.493925781250002,5,39.5121484375,11.6142578125"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Uzupełnianie tabeli faktu.Paths[Derived Column Output3]"
-          TopLeft="263,258.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="98,0"
-              Start="0,0"
-              End="90.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="90.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Uzupełnianie tabeli faktu.Paths[Derived Column Output2]"
-          TopLeft="159.25,180">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,57"
-              Start="0,0"
-              End="0,49.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,49.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="146,42"
-          Id="Package\Uzupełnianie tabeli faktu\Znajdź lokację"
-          TopLeft="347,681" />
-        <EdgeLayout
-          Id="Package\Uzupełnianie tabeli faktu.Paths[Derived Column Output4]"
-          TopLeft="261,701">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="86,0"
-              Start="0,0"
-              End="78.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="78.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="214,42"
-          Id="Package\Uzupełnianie tabeli faktu\Znajdź miejsce przestępstwa"
-          TopLeft="617,688" />
-        <EdgeLayout
-          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output]"
-          TopLeft="493,705.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="124,0"
-              Start="0,0"
-              End="116.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="116.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="1.1899609375,5,114.120078125,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="138,42"
-          Id="Package\Uzupełnianie tabeli faktu\Tabela faktu"
-          TopLeft="81,775" />
-        <EdgeLayout
-          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output5]"
           TopLeft="724,730">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -24890,60 +24827,209 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="172,42"
-          Id="Package\Uzupełnianie tabeli faktu\Flat File Destination"
-          TopLeft="323,782" />
         <EdgeLayout
-          Id="Package\Uzupełnianie tabeli faktu.Paths[OLE DB Destination Error Output]"
-          TopLeft="219,799.5">
+          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output10]"
+          TopLeft="754,297">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="104,0"
+              EndConnector="66,0"
               Start="0,0"
-              End="96.5,0">
+              End="58.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="96.5,0" />
+                    End="58.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-24.95890625,5,146.4178125,11.43359375"
+              BoundingBox="-18.94138671875,5,96.3827734375,11.609375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output11]"
+          TopLeft="501,259">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="113,36"
+              Start="0,0"
+              End="105.5,36">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="52.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="52.5,0"
+                    Point2="56.5,0"
+                    Point3="56.5,4" />
+                  <mssgle:LineSegment
+                    End="56.5,32" />
+                  <mssgle:CubicBezierSegment
+                    Point1="56.5,32"
+                    Point2="56.5,36"
+                    Point3="60.5,36" />
+                  <mssgle:LineSegment
+                    End="105.5,36" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="8.30861328125,-17.609375,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output12]"
+          TopLeft="884.25,77">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,121"
+              Start="0,0"
+              End="0,113.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,113.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,50.9453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output13]"
+          TopLeft="199,400.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="181,0"
+              Start="0,0"
+              End="173.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="173.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="38.55861328125,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Uzupełnianie tabeli faktu.Paths[Lookup Match Output14]"
+          TopLeft="493,705.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="124,0"
+              Start="0,0"
+              End="116.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="116.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="10.05861328125,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Uzupełnianie tabeli faktu.Paths[Jest linią]"
+          TopLeft="754,56.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="48,0"
+              Start="0,0"
+              End="40.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="40.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0.493925781250002,5,39.5121484375,11.6142578125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Uzupełnianie tabeli faktu.Paths[Derived Column Output4]"
+          TopLeft="261,701">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="86,0"
+              Start="0,0"
+              End="78.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="78.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Uzupełnianie tabeli faktu.Paths[Derived Column Output3]"
+          TopLeft="263,258.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="98,0"
+              Start="0,0"
+              End="90.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="90.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Uzupełnianie tabeli faktu\Znajdź przypadek">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[DimCase]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Uzupełnianie tabeli faktu\Znajdź kod 4">
     <Properties>
@@ -24968,15 +25054,48 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Uzupełnianie tabeli faktu\Dane z tabeli tymczasowej">
+    design-time-name="Package\Uzupełnianie tabeli faktu\Znajdź miejsce przestępstwa">
     <Properties>
       <Property>
-        <Name>DataSourceViewID</Name>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimPremis]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q2:string">Table</Value>
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Uzupełnianie tabeli faktu\Znajdź ofiarę">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimVictim]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -24992,6 +25111,29 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
         <Name>UsedTableName</Name>
         <Value
           type="q3:string">[dbo].[DimTime]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Uzupełnianie tabeli faktu\Znajdź broń">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimWeapon]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
@@ -25027,6 +25169,29 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\Uzupełnianie tabeli faktu\Znajdź przypadek">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimCase]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Uzupełnianie tabeli faktu\Znajdź kod 2">
     <Properties>
       <Property>
@@ -25038,6 +25203,29 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
         <Name>UsedTableName</Name>
         <Value
           type="q3:string">[dbo].[DimCrimeDescription]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Uzupełnianie tabeli faktu\Znajdź nazwę linii">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
@@ -25069,6 +25257,32 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Uzupełnianie tabeli faktu\Tabela faktu">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Uzupełnianie tabeli faktu\Dane z tabeli tymczasowej">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -25119,6 +25333,29 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\Uzupełnianie tabeli faktu\Znajdź lokację">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[TempLocation]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Uzupełnianie tabeli faktu\Znajdź datę zaraportowania">
     <Properties>
       <Property>
@@ -25130,75 +25367,6 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
         <Name>UsedTableName</Name>
         <Value
           type="q3:string">[dbo].[DimDate]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Uzupełnianie tabeli faktu\Znajdź ofiarę">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[DimVictim]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Uzupełnianie tabeli faktu\Znajdź nazwę linii">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Uzupełnianie tabeli faktu\Znajdź broń">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[DimWeapon]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
@@ -25247,37 +25415,37 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           Id="Package\Zapis do wymiarów\Znajdź opis pochodzenia"
           TopLeft="372,22" />
         <NodeLayout
-          Size="162,42"
-          Id="Package\Zapis do wymiarów\Znajdź nazwę linii"
-          TopLeft="496,184" />
+          Size="238,42"
+          Id="Package\Zapis do wymiarów\Powtórzone miejsca przestępstwa"
+          TopLeft="507,490" />
         <NodeLayout
           Size="187,42"
           Id="Package\Zapis do wymiarów\Znajdź istniejące ofiary"
           TopLeft="795,26" />
         <NodeLayout
-          Size="193,42"
-          Id="Package\Zapis do wymiarów\Znajdź istniejące lokacje"
-          TopLeft="732,1018" />
+          Size="166,42"
+          Id="Package\Zapis do wymiarów\Powtózone lokacje"
+          TopLeft="745,1094" />
         <NodeLayout
           Size="266,42"
           Id="Package\Zapis do wymiarów\Błąd wprowadzania opisów przestępstw"
           TopLeft="748,940" />
         <NodeLayout
-          Size="245,42"
-          Id="Package\Zapis do wymiarów\Rzutowanie koordynatów na napisy"
-          TopLeft="423,1014" />
+          Size="156,42"
+          Id="Package\Zapis do wymiarów\Powtórzone linie"
+          TopLeft="804,349" />
         <NodeLayout
-          Size="149,42"
-          Id="Package\Zapis do wymiarów\Unikalne ofiary"
-          TopLeft="615,24" />
+          Size="138,42"
+          Id="Package\Zapis do wymiarów\Tabela broni"
+          TopLeft="688,549" />
         <NodeLayout
           Size="135,42"
           Id="Package\Zapis do wymiarów\Tabela ofiar"
           TopLeft="1015,29" />
         <NodeLayout
-          Size="185,42"
-          Id="Package\Zapis do wymiarów\Powtórzone dane ofiar"
-          TopLeft="792,109" />
+          Size="149,42"
+          Id="Package\Zapis do wymiarów\Unikalne ofiary"
+          TopLeft="615,24" />
         <NodeLayout
           Size="155,42"
           Id="Package\Zapis do wymiarów\Unikalna lokacja"
@@ -25286,6 +25454,10 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           Size="261,42"
           Id="Package\Zapis do wymiarów\Znajdź istniejące miejsca przestępstwa"
           TopLeft="497,414" />
+        <NodeLayout
+          Size="141,42"
+          Id="Package\Zapis do wymiarów\Unikalne linie"
+          TopLeft="806,189" />
         <NodeLayout
           Size="218,42"
           Id="Package\Zapis do wymiarów\Union (miejsce przestępstwa)"
@@ -25299,14 +25471,6 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           Id="Package\Zapis do wymiarów\Błąd wprowadzania ofiar"
           TopLeft="986,110" />
         <NodeLayout
-          Size="167,42"
-          Id="Package\Zapis do wymiarów\Powtórzone bronie"
-          TopLeft="453,624" />
-        <NodeLayout
-          Size="156,42"
-          Id="Package\Zapis do wymiarów\Powtórzone linie"
-          TopLeft="804,349" />
-        <NodeLayout
           Size="223,42"
           Id="Package\Zapis do wymiarów\Unikalne miejsca przestępstwa"
           TopLeft="224,412" />
@@ -25314,10 +25478,6 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           Size="194,42"
           Id="Package\Zapis do wymiarów\Znajdź istniejące sprawy"
           TopLeft="442,697" />
-        <NodeLayout
-          Size="166,42"
-          Id="Package\Zapis do wymiarów\Powtózone lokacje"
-          TopLeft="745,1094" />
         <NodeLayout
           Size="144,42"
           Id="Package\Zapis do wymiarów\Unikalna broń"
@@ -25331,17 +25491,13 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           Id="Package\Zapis do wymiarów\Błąd wprowadzania miejsca przestępstwa"
           TopLeft="802,490" />
         <NodeLayout
-          Size="143,42"
-          Id="Package\Zapis do wymiarów\Tabela lokacji"
-          TopLeft="993,1018" />
+          Size="245,42"
+          Id="Package\Zapis do wymiarów\Rzutowanie koordynatów na napisy"
+          TopLeft="423,1014" />
         <NodeLayout
-          Size="171,42"
-          Id="Package\Zapis do wymiarów\Powtórzone sprawy"
-          TopLeft="450,774" />
-        <NodeLayout
-          Size="141,42"
-          Id="Package\Zapis do wymiarów\Unikalne linie"
-          TopLeft="806,189" />
+          Size="185,42"
+          Id="Package\Zapis do wymiarów\Powtórzone dane ofiar"
+          TopLeft="792,109" />
         <NodeLayout
           Size="202,42"
           Id="Package\Zapis do wymiarów\Błąd wprowadzania spraw"
@@ -25351,13 +25507,9 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           Id="Package\Zapis do wymiarów\Odczytywanie danych z tabeli tymczasowej"
           TopLeft="34,20" />
         <NodeLayout
-          Size="227,42"
-          Id="Package\Zapis do wymiarów\Powtórzone opisy przestępstwa"
-          TopLeft="471,936" />
-        <NodeLayout
-          Size="129,42"
-          Id="Package\Zapis do wymiarów\Tabela linii"
-          TopLeft="1009,264" />
+          Size="167,42"
+          Id="Package\Zapis do wymiarów\Powtórzone bronie"
+          TopLeft="453,624" />
         <NodeLayout
           Size="142,42"
           Id="Package\Zapis do wymiarów\Tabela spraw"
@@ -25371,13 +25523,21 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           Id="Package\Zapis do wymiarów\Multicast"
           TopLeft="108,102" />
         <NodeLayout
+          Size="188,42"
+          Id="Package\Zapis do wymiarów\Sprawdzanie linii metra"
+          TopLeft="235,184" />
+        <NodeLayout
           Size="203,42"
           Id="Package\Zapis do wymiarów\Błąd wprowadzania lokcaji"
           TopLeft="974,1096" />
         <NodeLayout
-          Size="238,42"
-          Id="Package\Zapis do wymiarów\Powtórzone miejsca przestępstwa"
-          TopLeft="507,490" />
+          Size="143,42"
+          Id="Package\Zapis do wymiarów\Tabela lokacji"
+          TopLeft="993,1018" />
+        <NodeLayout
+          Size="193,42"
+          Id="Package\Zapis do wymiarów\Znajdź istniejące lokacje"
+          TopLeft="732,1018" />
         <NodeLayout
           Size="156,42"
           Id="Package\Zapis do wymiarów\Unikalna sprawa"
@@ -25391,25 +25551,33 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           Id="Package\Zapis do wymiarów\Czy linia metra"
           TopLeft="522,287" />
         <NodeLayout
+          Size="171,42"
+          Id="Package\Zapis do wymiarów\Powtórzone sprawy"
+          TopLeft="450,774" />
+        <NodeLayout
           Size="189,42"
           Id="Package\Zapis do wymiarów\Błąd wprowadzania linii"
           TopLeft="982,351" />
-        <NodeLayout
-          Size="138,42"
-          Id="Package\Zapis do wymiarów\Tabela broni"
-          TopLeft="688,549" />
         <NodeLayout
           Size="206,42"
           Id="Package\Zapis do wymiarów\Tabela opisów przestępstw"
           TopLeft="776,864" />
         <NodeLayout
+          Size="227,42"
+          Id="Package\Zapis do wymiarów\Powtórzone opisy przestępstwa"
+          TopLeft="471,936" />
+        <NodeLayout
+          Size="129,42"
+          Id="Package\Zapis do wymiarów\Tabela linii"
+          TopLeft="1009,264" />
+        <NodeLayout
           Size="197,42"
           Id="Package\Zapis do wymiarów\Błąd wprowadzania broni"
           TopLeft="663,625" />
         <NodeLayout
-          Size="188,42"
-          Id="Package\Zapis do wymiarów\Sprawdzanie linii metra"
-          TopLeft="235,184" />
+          Size="162,42"
+          Id="Package\Zapis do wymiarów\Znajdź nazwę linii"
+          TopLeft="496,184" />
         <EdgeLayout
           Id="Package\Zapis do wymiarów.Paths[Union All Output 1]"
           TopLeft="331.75,331">
@@ -25936,73 +26104,73 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Zapis do wymiarów.Paths[Lookup No Match Output1]"
-          TopLeft="758,436.5">
+          TopLeft="636,719">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="72,0"
+              EndConnector="64,0"
               Start="0,0"
-              End="64.5,0">
+              End="56.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="64.5,0" />
+                    End="56.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-23.55638671875,5,111.6127734375,11.609375"
+              BoundingBox="-27.55638671875,5,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Zapis do wymiarów.Paths[Lookup No Match Output]"
-          TopLeft="925,1039">
+          TopLeft="968,283.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="68,0"
+              EndConnector="41,0"
               Start="0,0"
-              End="60.5,0">
+              End="33.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="60.5,0" />
+                    End="33.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-25.55638671875,5,111.6127734375,11.609375"
+              BoundingBox="-39.05638671875,5,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Zapis do wymiarów.Paths[Lookup No Match Output2]"
-          TopLeft="982,48.5">
+          TopLeft="709,884">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="33,0"
+              EndConnector="67,0"
               Start="0,0"
-              End="25.5,0">
+              End="59.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="25.5,0" />
+                    End="59.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-51.9250390625,5,129.350078125,16"
+              BoundingBox="-26.05638671875,5,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -26032,174 +26200,78 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Zapis do wymiarów.Paths[Lookup No Match Output4]"
-          TopLeft="709,884">
+          TopLeft="982,48.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="67,0"
+              EndConnector="33,0"
               Start="0,0"
-              End="59.5,0">
+              End="25.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="59.5,0" />
+                    End="25.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-26.05638671875,5,111.6127734375,11.609375"
+              BoundingBox="-43.05638671875,5,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Zapis do wymiarów.Paths[Lookup No Match Output5]"
-          TopLeft="968,283.5">
+          TopLeft="758,436.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="41,0"
+              EndConnector="72,0"
               Start="0,0"
-              End="33.5,0">
+              End="64.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="33.5,0" />
+                    End="64.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-39.05638671875,5,111.6127734375,11.609375"
+              BoundingBox="-23.55638671875,5,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Zapis do wymiarów.Paths[Lookup No Match Output6]"
-          TopLeft="636,719">
+          TopLeft="925,1039">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="64,0"
+              EndConnector="68,0"
               Start="0,0"
-              End="56.5,0">
+              End="60.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="56.5,0" />
+                    End="60.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-27.55638671875,5,111.6127734375,11.609375"
+              BoundingBox="-25.55638671875,5,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Zapis do wymiarów.Paths[Lookup Match Output]"
-          TopLeft="584.25,904">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,32"
-              Start="0,0"
-              End="0,24.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,6.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output1]"
-          TopLeft="566,44">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="49,0"
-              Start="0,0"
-              End="41.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="41.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-27.44138671875,5,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output2]"
-          TopLeft="880,303">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,46"
-              Start="0,0"
-              End="0,38.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,38.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,13.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output3]"
-          TopLeft="575,226">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,61"
-              Start="0,0"
-              End="0,53.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,53.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.9453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output8]"
           TopLeft="537.25,591">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -26223,31 +26295,31 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output5]"
-          TopLeft="886.5,68">
+          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output1]"
+          TopLeft="626.75,456">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,41"
+              EndConnector="0,34"
               Start="0,0"
-              End="0,33.5">
+              End="0,26.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.5" />
+                    End="0,26.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,10.9453125,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,7.4453125,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output6]"
+          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output2]"
           TopLeft="828.25,1060">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -26271,7 +26343,31 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output4]"
+          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output3]"
+          TopLeft="886.5,68">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41"
+              Start="0,0"
+              End="0,33.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,10.9453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output8]"
           TopLeft="537.25,739">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -26295,26 +26391,98 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output7]"
-          TopLeft="626.75,456">
+          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output5]"
+          TopLeft="575,226">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,34"
+              EndConnector="0,61"
               Start="0,0"
-              End="0,26.5">
+              End="0,53.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.5" />
+                    End="0,53.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,7.4453125,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,20.9453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output6]"
+          TopLeft="880,303">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46"
+              Start="0,0"
+              End="0,38.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,13.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output4]"
+          TopLeft="566,44">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="49,0"
+              Start="0,0"
+              End="41.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="41.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-27.44138671875,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output7]"
+          TopLeft="584.25,904">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32"
+              Start="0,0"
+              End="0,24.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,6.4453125,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -26568,29 +26736,6 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Zapis do wymiarów\Znajdź nazwę linii">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Zapis do wymiarów\Znajdź istniejące ofiary">
     <Properties>
       <Property>
@@ -26614,25 +26759,15 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Zapis do wymiarów\Znajdź istniejące lokacje">
+    design-time-name="Package\Zapis do wymiarów\Tabela broni">
     <Properties>
       <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
+        <Name>DataSourceViewID</Name>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -26732,33 +26867,7 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Zapis do wymiarów\Tabela lokacji">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Zapis do wymiarów\Odczytywanie danych z tabeli tymczasowej">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Zapis do wymiarów\Tabela linii">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -26807,7 +26916,7 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Zapis do wymiarów\Tabela broni">
+    design-time-name="Package\Zapis do wymiarów\Tabela lokacji">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -26816,6 +26925,29 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Zapis do wymiarów\Znajdź istniejące lokacje">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -26829,6 +26961,42 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Zapis do wymiarów\Tabela linii">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Zapis do wymiarów\Znajdź nazwę linii">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -26968,9 +27136,7 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26992,9 +27158,7 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27041,7 +27205,7 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-21.9250390625,5,129.350078125,16"
+              BoundingBox="-13.05638671875,5,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -27258,179 +27422,6 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Uzupełnianie tabeli faktu\Znajdź lokację">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[TempLocation]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Uzupełnianie tabeli faktu\Znajdź miejsce przestępstwa">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[DimPremis]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Uzupełnianie tabeli faktu\Tabela faktu">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Przerzucenie danych do tymczasowej tabeli lokacji">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="137,42"
-          Id="Package\Przerzucenie danych do tymczasowej tabeli lokacji\DimLocation"
-          TopLeft="83,33" />
-        <NodeLayout
-          Size="158,42"
-          Id="Package\Przerzucenie danych do tymczasowej tabeli lokacji\Lat i Lon jako int"
-          TopLeft="89,118" />
-        <EdgeLayout
-          Id="Package\Przerzucenie danych do tymczasowej tabeli lokacji.Paths[OLE DB Source Output]"
-          TopLeft="151.5,75">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="16.5,43"
-              Start="0,0"
-              End="16.5,35.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17.5"
-                    Point2="0,21.5"
-                    Point3="4,21.5" />
-                  <mssgle:LineSegment
-                    End="12.5,21.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="12.5,21.5"
-                    Point2="16.5,21.5"
-                    Point3="16.5,25.5" />
-                  <mssgle:LineSegment
-                    End="16.5,35.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="145,42"
-          Id="Package\Przerzucenie danych do tymczasowej tabeli lokacji\TempLocation"
-          TopLeft="72,221" />
-        <EdgeLayout
-          Id="Package\Przerzucenie danych do tymczasowej tabeli lokacji.Paths[Derived Column Output]"
-          TopLeft="168,160">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-23.5,61"
-              Start="0,0"
-              End="-23.5,53.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26.5"
-                    Point2="0,30.5"
-                    Point3="-4,30.5" />
-                  <mssgle:LineSegment
-                    End="-19.5,30.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-19.5,30.5"
-                    Point2="-23.5,30.5"
-                    Point3="-23.5,34.5" />
-                  <mssgle:LineSegment
-                    End="-23.5,53.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Przerzucenie danych do tymczasowej tabeli lokacji\DimLocation">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Przerzucenie danych do tymczasowej tabeli lokacji\TempLocation">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

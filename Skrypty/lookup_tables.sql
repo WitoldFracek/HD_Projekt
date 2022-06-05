@@ -42,7 +42,7 @@ FROM TempAllCrime;
 
 SELECT
 	LocationID,
-	LOWER(AreaName) AS AreaNameLower,
+	AreaName,
 	AreaCode,
 	SubareaCode,
 	CAST(Latitude * 10000 AS INT) AS LatInt,
