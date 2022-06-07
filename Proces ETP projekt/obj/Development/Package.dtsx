@@ -11,11 +11,276 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="163"
-  DTS:VersionGUID="{DAEAFF5B-3DB9-402B-8CBE-2F3FF2F4825F}">
+  DTS:VersionBuild="168"
+  DTS:VersionGUID="{54A50936-9EFE-49AF-B0A6-3B6CC83E1E08}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Allowed Areas]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{8AF274FD-DD8E-48BE-A57E-3EB8814FD795}"
+      DTS:ObjectName="Allowed Areas">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="D:\HDD\Studia\Hurtownie danych\HD_Projekt\ETL_allowed\allowed_areas.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AreaCode"
+              DTS:DTSID="{5057E727-2537-4A47-B609-5D11C41FE70F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AreaName"
+              DTS:DTSID="{3ABC75C6-8752-4E81-88B9-D4A4A31A69F2}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Allowed Case]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{692AABCD-4783-4048-97F1-2FD54158AEDA}"
+      DTS:ObjectName="Allowed Case">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="D:\HDD\Studia\Hurtownie danych\HD_Projekt\ETL_allowed\allowed_case.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CaseStatus"
+              DTS:DTSID="{D8B290B2-ABED-4D45-98E3-BA0B8DAB57D3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StatusDescription"
+              DTS:DTSID="{255C7795-A9EB-417A-A94D-E07C8F49A26B}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Allowed Crime Descriptions]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{6D6B0777-3B82-4085-A0B0-B670754A0B28}"
+      DTS:ObjectName="Allowed Crime Descriptions">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="D:\HDD\Studia\Hurtownie danych\HD_Projekt\ETL_allowed\allowed_crme_description.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CrimeCode"
+              DTS:DTSID="{A18C00A3-C066-4D3C-AE89-7DD9B3B12EDD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CrimeDescription"
+              DTS:DTSID="{8AC9FF09-153C-44B0-BF3E-99F84DAC40E8}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Allowed Descent]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{3B66A6DD-831D-4B24-86BE-A5A430430055}"
+      DTS:ObjectName="Allowed Descent">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="D:\HDD\Studia\Hurtownie danych\HD_Projekt\ETL_allowed\allowed_descent.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="40"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Descent"
+              DTS:DTSID="{6DFDA096-7FB7-4930-8DE0-BDEEC4B73FC4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DescentSymbol"
+              DTS:DTSID="{3131EC7A-52E5-469E-ADFD-0F57AB684DCE}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Allowed Metro Line]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E76A9980-EC5A-40C3-BD0B-1A2EAFE9206A}"
+      DTS:ObjectName="Allowed Metro Line">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="D:\HDD\Studia\Hurtownie danych\HD_Projekt\ETL_allowed\allowed_metro_line.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Line"
+              DTS:DTSID="{8F014C87-5688-4837-80DF-89AE3257F4C0}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Allowed Premis]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{8CE1F8A1-82D1-46EF-926C-D8D093E6A616}"
+      DTS:ObjectName="Allowed Premis">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="D:\HDD\Studia\Hurtownie danych\HD_Projekt\ETL_allowed\allowed_premis.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PremisDescription"
+              DTS:DTSID="{AF5F3D41-4A7A-4D71-841C-54FBE3A29498}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Allowed Subareas]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{92499D88-F419-41A0-9875-B014D8EA01E1}"
+      DTS:ObjectName="Allowed Subareas">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="D:\HDD\Studia\Hurtownie danych\HD_Projekt\ETL_allowed\allowed_subarea_code.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SubareaCode"
+              DTS:DTSID="{D87820B2-B4CD-452A-A4A0-23DA9875F228}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Allowed Weapon]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{BA1B95E6-59C6-4D1D-854D-625836E69885}"
+      DTS:ObjectName="Allowed Weapon">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="D:\HDD\Studia\Hurtownie danych\HD_Projekt\ETL_allowed\allowed_weapon.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Weapon"
+              DTS:DTSID="{4C6660A2-6A3E-4018-A913-59508EC758C0}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Case Insert Err]"
       DTS:CreationName="FLATFILE"
@@ -8478,6 +8743,1855 @@
         <SQLTask:SqlTaskData
           SQLTask:Connection="{9CEB06AC-CBDD-4650-8DEC-FDEC35B1035C}"
           SQLTask:SqlStatementSource="DROP TABLE IF EXISTS TempAllCrime;&#xA;&#xA;CREATE TABLE [TempAllCrime] (&#xA;    [OfficialFileNumber] int,&#xA;    [ReportedDate] datetime,&#xA;    [OccurenceDate] datetime,&#xA;    [AreaCode] int,&#xA;    [AreaName] nvarchar(20),&#xA;    [SubareaCode] int,&#xA;    [CrimeCode] int,&#xA;    [CrimeDescription] nvarchar(100),&#xA;    [VictimAge] int,&#xA;    [VictimSex] nvarchar(1),&#xA;    [VictimDescent] nvarchar(1),&#xA;    [PremisCode] int,&#xA;    [PremisDescription] nvarchar(100),&#xA;    [WeaponUsedCode] int,&#xA;    [WeaponDescription] nvarchar(100),&#xA;    [CaseStatus] nvarchar(2),&#xA;    [StatusDescription] nvarchar(20),&#xA;    [CrimeCode1] int,&#xA;    [CrimeCode2] int,&#xA;    [CrimeCode3] int,&#xA;    [CrimeCode4] int,&#xA;    [Location] nvarchar(50),&#xA;    [CrossStreet] nvarchar(50),&#xA;    [Latitude] real,&#xA;    [Longitude] real,&#xA;    [Hour] int,&#xA;    [Minute] int,&#xA;    [CorrectedTime] time&#xA;);&#xA;&#xA;DROP TABLE IF EXISTS TempLocation;&#xA;CREATE TABLE TempLocation(&#xA;&#x9;LocationID INT,&#xA;&#x9;AreaCode INT NULL,&#xA;&#x9;AreaName NVARCHAR(20),&#xA;&#x9;SubareaCode INT NULL,&#xA;&#x9;Latitude INT NULL,&#xA;&#x9;Longitude INT NULL,&#xA;&#x9;CONSTRAINT all_u_tl UNIQUE(AreaCode, AreaName, SubareaCode, Latitude, Longitude)&#xA;);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Uzuełnianie danych dozwolonych"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{4190C8CA-3893-44C5-B77E-6463A0F52CC0}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Uzuełnianie danych dozwolonych"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Uzuełnianie danych dozwolonych\Dozwolone bronie"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Dozwolone bronie"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone bronie.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Allowed Weapon]"
+                  connectionManagerRefId="Package.ConnectionManagers[Allowed Weapon]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone bronie.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone bronie.Outputs[Flat File Source Output].Columns[Weapon]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Dozwolone bronie.Outputs[Flat File Source Output].ExternalColumns[Weapon]"
+                      length="100"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone bronie.Outputs[Flat File Source Output].Columns[Weapon]"
+                      name="Weapon"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone bronie.Outputs[Flat File Source Output].ExternalColumns[Weapon]"
+                      dataType="wstr"
+                      length="100"
+                      name="Weapon" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone bronie.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone bronie.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone bronie.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone bronie.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone bronie.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone bronie.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone bronie.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Dozwolone dzielnice"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Allowed Areas]"
+                  connectionManagerRefId="Package.ConnectionManagers[Allowed Areas]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice.Outputs[Flat File Source Output].Columns[AreaCode]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice.Outputs[Flat File Source Output].ExternalColumns[AreaCode]"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice.Outputs[Flat File Source Output].Columns[AreaCode]"
+                      name="AreaCode"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice.Outputs[Flat File Source Output].Columns[AreaName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice.Outputs[Flat File Source Output].ExternalColumns[AreaName]"
+                      length="20"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice.Outputs[Flat File Source Output].Columns[AreaName]"
+                      name="AreaName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice.Outputs[Flat File Source Output].ExternalColumns[AreaCode]"
+                      dataType="i4"
+                      name="AreaCode" />
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice.Outputs[Flat File Source Output].ExternalColumns[AreaName]"
+                      codePage="1250"
+                      dataType="str"
+                      length="20"
+                      name="AreaName" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Uzuełnianie danych dozwolonych\Dozwolone linie metra"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Dozwolone linie metra"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone linie metra.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Allowed Metro Line]"
+                  connectionManagerRefId="Package.ConnectionManagers[Allowed Metro Line]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone linie metra.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone linie metra.Outputs[Flat File Source Output].Columns[Line]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Dozwolone linie metra.Outputs[Flat File Source Output].ExternalColumns[Line]"
+                      length="10"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone linie metra.Outputs[Flat File Source Output].Columns[Line]"
+                      name="Line"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone linie metra.Outputs[Flat File Source Output].ExternalColumns[Line]"
+                      dataType="wstr"
+                      length="10"
+                      name="Line" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone linie metra.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone linie metra.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone linie metra.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone linie metra.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone linie metra.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone linie metra.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone linie metra.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Uzuełnianie danych dozwolonych\Dozwolone miejsca przestępstw"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Dozwolone miejsca przestępstw"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone miejsca przestępstw.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Allowed Premis]"
+                  connectionManagerRefId="Package.ConnectionManagers[Allowed Premis]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone miejsca przestępstw.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone miejsca przestępstw.Outputs[Flat File Source Output].Columns[PremisDescription]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Dozwolone miejsca przestępstw.Outputs[Flat File Source Output].ExternalColumns[PremisDescription]"
+                      length="100"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone miejsca przestępstw.Outputs[Flat File Source Output].Columns[PremisDescription]"
+                      name="PremisDescription"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone miejsca przestępstw.Outputs[Flat File Source Output].ExternalColumns[PremisDescription]"
+                      dataType="wstr"
+                      length="100"
+                      name="PremisDescription" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone miejsca przestępstw.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone miejsca przestępstw.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone miejsca przestępstw.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone miejsca przestępstw.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone miejsca przestępstw.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone miejsca przestępstw.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone miejsca przestępstw.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Dozwolone opisy przetępstw"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Allowed Crime Descriptions]"
+                  connectionManagerRefId="Package.ConnectionManagers[Allowed Crime Descriptions]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw.Outputs[Flat File Source Output].Columns[CrimeCode]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw.Outputs[Flat File Source Output].ExternalColumns[CrimeCode]"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw.Outputs[Flat File Source Output].Columns[CrimeCode]"
+                      name="CrimeCode"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw.Outputs[Flat File Source Output].Columns[CrimeDescription]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw.Outputs[Flat File Source Output].ExternalColumns[CrimeDescription]"
+                      length="100"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw.Outputs[Flat File Source Output].Columns[CrimeDescription]"
+                      name="CrimeDescription"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw.Outputs[Flat File Source Output].ExternalColumns[CrimeCode]"
+                      dataType="i4"
+                      name="CrimeCode" />
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw.Outputs[Flat File Source Output].ExternalColumns[CrimeDescription]"
+                      dataType="wstr"
+                      length="100"
+                      name="CrimeDescription" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Dozwolone pochodzenie"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Allowed Descent]"
+                  connectionManagerRefId="Package.ConnectionManagers[Allowed Descent]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie.Outputs[Flat File Source Output].Columns[Descent]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie.Outputs[Flat File Source Output].ExternalColumns[Descent]"
+                      length="40"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie.Outputs[Flat File Source Output].Columns[Descent]"
+                      name="Descent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie.Outputs[Flat File Source Output].Columns[DescentSymbol]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie.Outputs[Flat File Source Output].ExternalColumns[DescentSymbol]"
+                      length="1"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie.Outputs[Flat File Source Output].Columns[DescentSymbol]"
+                      name="DescentSymbol"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie.Outputs[Flat File Source Output].ExternalColumns[Descent]"
+                      dataType="wstr"
+                      length="40"
+                      name="Descent" />
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie.Outputs[Flat File Source Output].ExternalColumns[DescentSymbol]"
+                      dataType="wstr"
+                      length="1"
+                      name="DescentSymbol" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Uzuełnianie danych dozwolonych\Dozwolone poddzielnice"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Dozwolone poddzielnice"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone poddzielnice.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Allowed Subareas]"
+                  connectionManagerRefId="Package.ConnectionManagers[Allowed Subareas]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone poddzielnice.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone poddzielnice.Outputs[Flat File Source Output].Columns[SubareaCode]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Dozwolone poddzielnice.Outputs[Flat File Source Output].ExternalColumns[SubareaCode]"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone poddzielnice.Outputs[Flat File Source Output].Columns[SubareaCode]"
+                      name="SubareaCode"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone poddzielnice.Outputs[Flat File Source Output].ExternalColumns[SubareaCode]"
+                      dataType="i4"
+                      name="SubareaCode" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone poddzielnice.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone poddzielnice.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone poddzielnice.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone poddzielnice.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone poddzielnice.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone poddzielnice.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone poddzielnice.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Dozwolone sprawy"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Allowed Case]"
+                  connectionManagerRefId="Package.ConnectionManagers[Allowed Case]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy.Outputs[Flat File Source Output].Columns[CaseStatus]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy.Outputs[Flat File Source Output].ExternalColumns[CaseStatus]"
+                      length="2"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy.Outputs[Flat File Source Output].Columns[CaseStatus]"
+                      name="CaseStatus"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy.Outputs[Flat File Source Output].Columns[StatusDescription]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy.Outputs[Flat File Source Output].ExternalColumns[StatusDescription]"
+                      length="50"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy.Outputs[Flat File Source Output].Columns[StatusDescription]"
+                      name="StatusDescription"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy.Outputs[Flat File Source Output].ExternalColumns[CaseStatus]"
+                      dataType="wstr"
+                      length="2"
+                      name="CaseStatus" />
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy.Outputs[Flat File Source Output].ExternalColumns[StatusDescription]"
+                      dataType="wstr"
+                      length="50"
+                      name="StatusDescription" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Uzuełnianie danych dozwolonych\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[AllowedWeapon]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Uzuełnianie danych dozwolonych\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.LosAngelesCrimeDW]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.LosAngelesCrimeDW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Uzuełnianie danych dozwolonych\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Weapon]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Weapon"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Weapon]"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone bronie.Outputs[Flat File Source Output].Columns[Weapon]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Weapon]"
+                      dataType="wstr"
+                      length="100"
+                      name="Weapon" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Uzuełnianie danych dozwolonych\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych dzielnic"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Tabela dozwolonych dzielnic"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[AllowedAreas]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych dzielnic.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.LosAngelesCrimeDW]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.LosAngelesCrimeDW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych dzielnic.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych dzielnic.Inputs[OLE DB Destination Input].Columns[AreaCode]"
+                      cachedDataType="i4"
+                      cachedName="AreaCode"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych dzielnic.Inputs[OLE DB Destination Input].ExternalColumns[AreaCode]"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice.Outputs[Flat File Source Output].Columns[AreaCode]" />
+                    <inputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych dzielnic.Inputs[OLE DB Destination Input].Columns[AreaName]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="AreaName"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych dzielnic.Inputs[OLE DB Destination Input].ExternalColumns[AreaName]"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice.Outputs[Flat File Source Output].Columns[AreaName]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych dzielnic.Inputs[OLE DB Destination Input].ExternalColumns[AreaCode]"
+                      dataType="i4"
+                      name="AreaCode" />
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych dzielnic.Inputs[OLE DB Destination Input].ExternalColumns[AreaName]"
+                      dataType="wstr"
+                      length="20"
+                      name="AreaName" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych dzielnic.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych dzielnic.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych dzielnic.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych dzielnic.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych dzielnic.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych dzielnic.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych linii metra"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Tabela dozwolonych linii metra"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[AllowedMetroLine]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych linii metra.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.LosAngelesCrimeDW]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.LosAngelesCrimeDW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych linii metra.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych linii metra.Inputs[OLE DB Destination Input].Columns[Line]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="Line"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych linii metra.Inputs[OLE DB Destination Input].ExternalColumns[Line]"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone linie metra.Outputs[Flat File Source Output].Columns[Line]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych linii metra.Inputs[OLE DB Destination Input].ExternalColumns[Line]"
+                      dataType="wstr"
+                      length="10"
+                      name="Line" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych linii metra.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych linii metra.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych linii metra.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych linii metra.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych linii metra.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych linii metra.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych miejsc przestępstw"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Tabela dozwolonych miejsc przestępstw"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[AllowedPremis]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych miejsc przestępstw.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.LosAngelesCrimeDW]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.LosAngelesCrimeDW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych miejsc przestępstw.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych miejsc przestępstw.Inputs[OLE DB Destination Input].Columns[PremisDescription]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="PremisDescription"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych miejsc przestępstw.Inputs[OLE DB Destination Input].ExternalColumns[PremisDescription]"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone miejsca przestępstw.Outputs[Flat File Source Output].Columns[PremisDescription]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych miejsc przestępstw.Inputs[OLE DB Destination Input].ExternalColumns[PremisDescription]"
+                      dataType="wstr"
+                      length="100"
+                      name="PremisDescription" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych miejsc przestępstw.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych miejsc przestępstw.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych miejsc przestępstw.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych miejsc przestępstw.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych miejsc przestępstw.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych miejsc przestępstw.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych opisów przestepstw"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Tabela dozwolonych opisów przestepstw"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[AllowedCrimeDescription]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych opisów przestepstw.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.LosAngelesCrimeDW]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.LosAngelesCrimeDW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych opisów przestepstw.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych opisów przestepstw.Inputs[OLE DB Destination Input].Columns[CrimeCode]"
+                      cachedDataType="i4"
+                      cachedName="CrimeCode"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych opisów przestepstw.Inputs[OLE DB Destination Input].ExternalColumns[CrimeCode]"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw.Outputs[Flat File Source Output].Columns[CrimeCode]" />
+                    <inputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych opisów przestepstw.Inputs[OLE DB Destination Input].Columns[CrimeDescription]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="CrimeDescription"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych opisów przestepstw.Inputs[OLE DB Destination Input].ExternalColumns[CrimeDescription]"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw.Outputs[Flat File Source Output].Columns[CrimeDescription]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych opisów przestepstw.Inputs[OLE DB Destination Input].ExternalColumns[CrimeCode]"
+                      dataType="i4"
+                      name="CrimeCode" />
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych opisów przestepstw.Inputs[OLE DB Destination Input].ExternalColumns[CrimeDescription]"
+                      dataType="wstr"
+                      length="100"
+                      name="CrimeDescription" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych opisów przestepstw.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych opisów przestepstw.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych opisów przestepstw.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych opisów przestepstw.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych opisów przestepstw.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych opisów przestepstw.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych pochodzeń"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Tabela dozwolonych pochodzeń"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[AllowedDescent]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych pochodzeń.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.LosAngelesCrimeDW]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.LosAngelesCrimeDW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych pochodzeń.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych pochodzeń.Inputs[OLE DB Destination Input].Columns[Descent]"
+                      cachedDataType="wstr"
+                      cachedLength="40"
+                      cachedName="Descent"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych pochodzeń.Inputs[OLE DB Destination Input].ExternalColumns[Descent]"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie.Outputs[Flat File Source Output].Columns[Descent]" />
+                    <inputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych pochodzeń.Inputs[OLE DB Destination Input].Columns[DescentSymbol]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="DescentSymbol"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych pochodzeń.Inputs[OLE DB Destination Input].ExternalColumns[DescentSymbol]"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie.Outputs[Flat File Source Output].Columns[DescentSymbol]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych pochodzeń.Inputs[OLE DB Destination Input].ExternalColumns[Descent]"
+                      dataType="wstr"
+                      length="40"
+                      name="Descent" />
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych pochodzeń.Inputs[OLE DB Destination Input].ExternalColumns[DescentSymbol]"
+                      dataType="wstr"
+                      length="1"
+                      name="DescentSymbol" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych pochodzeń.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych pochodzeń.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych pochodzeń.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych pochodzeń.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych pochodzeń.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych pochodzeń.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych poddzielnic"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Tabela dozwolonych poddzielnic"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[AllowedSubareaCode]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych poddzielnic.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.LosAngelesCrimeDW]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.LosAngelesCrimeDW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych poddzielnic.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych poddzielnic.Inputs[OLE DB Destination Input].Columns[SubareaCode]"
+                      cachedDataType="i4"
+                      cachedName="SubareaCode"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych poddzielnic.Inputs[OLE DB Destination Input].ExternalColumns[SubareaCode]"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone poddzielnice.Outputs[Flat File Source Output].Columns[SubareaCode]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych poddzielnic.Inputs[OLE DB Destination Input].ExternalColumns[SubareaCode]"
+                      dataType="i4"
+                      name="SubareaCode" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych poddzielnic.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych poddzielnic.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych poddzielnic.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych poddzielnic.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych poddzielnic.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych poddzielnic.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych spraw"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Tabela dozwolonych spraw"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[AllowedCase]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych spraw.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.LosAngelesCrimeDW]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.LosAngelesCrimeDW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych spraw.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych spraw.Inputs[OLE DB Destination Input].Columns[CaseStatus]"
+                      cachedDataType="wstr"
+                      cachedLength="2"
+                      cachedName="CaseStatus"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych spraw.Inputs[OLE DB Destination Input].ExternalColumns[CaseStatus]"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy.Outputs[Flat File Source Output].Columns[CaseStatus]" />
+                    <inputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych spraw.Inputs[OLE DB Destination Input].Columns[StatusDescription]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="StatusDescription"
+                      externalMetadataColumnId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych spraw.Inputs[OLE DB Destination Input].ExternalColumns[StatusDescription]"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy.Outputs[Flat File Source Output].Columns[StatusDescription]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych spraw.Inputs[OLE DB Destination Input].ExternalColumns[CaseStatus]"
+                      dataType="wstr"
+                      length="2"
+                      name="CaseStatus" />
+                    <externalMetadataColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych spraw.Inputs[OLE DB Destination Input].ExternalColumns[StatusDescription]"
+                      dataType="wstr"
+                      length="50"
+                      name="StatusDescription" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych spraw.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych spraw.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych spraw.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych spraw.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych spraw.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych spraw.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Uzuełnianie danych dozwolonych.Paths[Flat File Source Output]"
+              endId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych dzielnic.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Uzuełnianie danych dozwolonych.Paths[Flat File Source Output1]"
+              endId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych spraw.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Uzuełnianie danych dozwolonych.Paths[Flat File Source Output2]"
+              endId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych opisów przestepstw.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Uzuełnianie danych dozwolonych.Paths[Flat File Source Output3]"
+              endId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych pochodzeń.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Uzuełnianie danych dozwolonych.Paths[Flat File Source Output4]"
+              endId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych linii metra.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Uzuełnianie danych dozwolonych\Dozwolone linie metra.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Uzuełnianie danych dozwolonych.Paths[Flat File Source Output5]"
+              endId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych miejsc przestępstw.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Uzuełnianie danych dozwolonych\Dozwolone miejsca przestępstw.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Uzuełnianie danych dozwolonych.Paths[Flat File Source Output6]"
+              endId="Package\Uzuełnianie danych dozwolonych\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Uzuełnianie danych dozwolonych\Dozwolone bronie.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Uzuełnianie danych dozwolonych.Paths[Flat File Source Output7]"
+              endId="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych poddzielnic.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Uzuełnianie danych dozwolonych\Dozwolone poddzielnice.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -23200,6 +25314,14 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 4"
       DTS:To="Package\Uzupełnianie tabeli faktu" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{601948CC-987B-4244-ACC9-AACC624E764C}"
+      DTS:From="Package\Tworzenie tabel dopuszczalnych wartości"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Uzuełnianie danych dozwolonych" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -23399,6 +25521,44 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           Size="272,42"
           Id="Package\Tworzenie tabel dopuszczalnych wartości"
           TopLeft="546,33" />
+        <NodeLayout
+          Size="234,42"
+          Id="Package\Uzuełnianie danych dozwolonych"
+          TopLeft="583,145" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="682,75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="18,70"
+              Start="0,0"
+              End="18,62.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31"
+                    Point2="0,35"
+                    Point3="4,35" />
+                  <mssgle:LineSegment
+                    End="14,35" />
+                  <mssgle:CubicBezierSegment
+                    Point1="14,35"
+                    Point2="18,35"
+                    Point3="18,39" />
+                  <mssgle:LineSegment
+                    End="18,62.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -24093,7 +26253,7 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
     design-time-name="Package\Przerzucenie danych do tymczasowej tabeli lokacji">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="145,42"
           Id="Package\Przerzucenie danych do tymczasowej tabeli lokacji\TempLocation"
@@ -24137,7 +26297,9 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -24171,7 +26333,9 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -25624,7 +27788,9 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -25694,7 +27860,9 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -25956,7 +28124,9 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -25990,7 +28160,9 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26024,7 +28196,9 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26058,7 +28232,9 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26092,7 +28268,9 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26126,7 +28304,129 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Zapis do wymiarów.Paths[Lookup No Match Output1]"
+          TopLeft="925,1039">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="68,0"
+              Start="0,0"
+              End="60.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="60.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-25.55638671875,5,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Zapis do wymiarów.Paths[Lookup No Match Output]"
+          TopLeft="758,436.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="72,0"
+              Start="0,0"
+              End="64.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="64.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-23.55638671875,5,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Zapis do wymiarów.Paths[Lookup No Match Output2]"
+          TopLeft="982,48.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="33,0"
+              Start="0,0"
+              End="25.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="25.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-43.05638671875,5,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Zapis do wymiarów.Paths[Lookup No Match Output3]"
+          TopLeft="633,570">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="55,0"
+              Start="0,0"
+              End="47.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="47.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-32.05638671875,5,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Zapis do wymiarów.Paths[Lookup No Match Output4]"
+          TopLeft="709,884">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="67,0"
+              Start="0,0"
+              End="59.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="59.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-26.05638671875,5,111.6127734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26178,222 +28478,6 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Zapis do wymiarów.Paths[Lookup No Match Output4]"
-          TopLeft="709,884">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="67,0"
-              Start="0,0"
-              End="59.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="59.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-26.05638671875,5,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Zapis do wymiarów.Paths[Lookup No Match Output3]"
-          TopLeft="633,570">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="55,0"
-              Start="0,0"
-              End="47.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="47.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-32.05638671875,5,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Zapis do wymiarów.Paths[Lookup No Match Output2]"
-          TopLeft="982,48.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="33,0"
-              Start="0,0"
-              End="25.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="25.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-43.05638671875,5,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Zapis do wymiarów.Paths[Lookup No Match Output]"
-          TopLeft="758,436.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="72,0"
-              Start="0,0"
-              End="64.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="64.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-23.55638671875,5,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Zapis do wymiarów.Paths[Lookup No Match Output1]"
-          TopLeft="925,1039">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="68,0"
-              Start="0,0"
-              End="60.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="60.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-25.55638671875,5,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output7]"
-          TopLeft="537.25,591">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,33"
-              Start="0,0"
-              End="0,25.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,6.9453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output4]"
-          TopLeft="626.75,456">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34"
-              Start="0,0"
-              End="0,26.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,7.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output6]"
-          TopLeft="828.25,1060">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34"
-              Start="0,0"
-              End="0,26.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,7.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output5]"
-          TopLeft="886.5,68">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,41"
-              Start="0,0"
-              End="0,33.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,10.9453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Zapis do wymiarów.Paths[Lookup Match Output]"
           TopLeft="537.25,739">
           <EdgeLayout.Curve>
@@ -26418,26 +28502,26 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output3]"
-          TopLeft="575,226">
+          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output1]"
+          TopLeft="584.25,904">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,61"
+              EndConnector="0,32"
               Start="0,0"
-              End="0,53.5">
+              End="0,24.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,53.5" />
+                    End="0,24.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.9453125,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,6.4453125,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -26466,6 +28550,30 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output3]"
+          TopLeft="575,226">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61"
+              Start="0,0"
+              End="0,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.9453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Zapis do wymiarów.Paths[Lookup Match Output8]"
           TopLeft="566,44">
           <EdgeLayout.Curve>
@@ -26490,26 +28598,98 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output1]"
-          TopLeft="584.25,904">
+          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output5]"
+          TopLeft="886.5,68">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,32"
+              EndConnector="0,41"
               Start="0,0"
-              End="0,24.5">
+              End="0,33.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.5" />
+                    End="0,33.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,6.4453125,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,10.9453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output6]"
+          TopLeft="828.25,1060">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34"
+              Start="0,0"
+              End="0,26.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,7.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output4]"
+          TopLeft="626.75,456">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34"
+              Start="0,0"
+              End="0,26.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,7.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Zapis do wymiarów.Paths[Lookup Match Output7]"
+          TopLeft="537.25,591">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33"
+              Start="0,0"
+              End="0,25.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,6.9453125,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -26556,7 +28736,9 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26578,7 +28760,9 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26600,7 +28784,9 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26622,7 +28808,9 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26644,7 +28832,9 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26666,7 +28856,9 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26688,7 +28880,9 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26710,7 +28904,9 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -27163,7 +29359,9 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27185,7 +29383,9 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27449,6 +29649,358 @@ where [refTable].[CrimeCode1] = ? and [refTable].[CrimeCode2] = ? and [refTable]
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Uzuełnianie danych dozwolonych">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="174,42"
+          Id="Package\Uzuełnianie danych dozwolonych\Dozwolone dzielnice"
+          TopLeft="127,36" />
+        <NodeLayout
+          Size="212,42"
+          Id="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych dzielnic"
+          TopLeft="112,138" />
+        <EdgeLayout
+          Id="Package\Uzuełnianie danych dozwolonych.Paths[Flat File Source Output]"
+          TopLeft="216,78">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="230,42"
+          Id="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych poddzielnic"
+          TopLeft="365,137" />
+        <NodeLayout
+          Size="167,42"
+          Id="Package\Uzuełnianie danych dozwolonych\Dozwolone sprawy"
+          TopLeft="654,34" />
+        <NodeLayout
+          Size="206,42"
+          Id="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych spraw"
+          TopLeft="630,134" />
+        <EdgeLayout
+          Id="Package\Uzuełnianie danych dozwolonych.Paths[Flat File Source Output1]"
+          TopLeft="735.25,76">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58"
+              Start="0,0"
+              End="0,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="213,42"
+          Id="Package\Uzuełnianie danych dozwolonych\Dozwolone opisy przetępstw"
+          TopLeft="117,234" />
+        <NodeLayout
+          Size="270,42"
+          Id="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych opisów przestepstw"
+          TopLeft="93,335" />
+        <EdgeLayout
+          Id="Package\Uzuełnianie danych dozwolonych.Paths[Flat File Source Output2]"
+          TopLeft="225.75,276">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59"
+              Start="0,0"
+              End="0,51.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="192,42"
+          Id="Package\Uzuełnianie danych dozwolonych\Dozwolone pochodzenie"
+          TopLeft="427,230" />
+        <NodeLayout
+          Size="228,42"
+          Id="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych pochodzeń"
+          TopLeft="408,336" />
+        <EdgeLayout
+          Id="Package\Uzuełnianie danych dozwolonych.Paths[Flat File Source Output3]"
+          TopLeft="522.5,272">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,64"
+              Start="0,0"
+              End="0,56.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="183,42"
+          Id="Package\Uzuełnianie danych dozwolonych\Dozwolone linie metra"
+          TopLeft="700,232" />
+        <NodeLayout
+          Size="224,42"
+          Id="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych linii metra"
+          TopLeft="677,336" />
+        <EdgeLayout
+          Id="Package\Uzuełnianie danych dozwolonych.Paths[Flat File Source Output4]"
+          TopLeft="790.25,274">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,62"
+              Start="0,0"
+              End="0,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="228,42"
+          Id="Package\Uzuełnianie danych dozwolonych\Dozwolone miejsca przestępstw"
+          TopLeft="112,419" />
+        <NodeLayout
+          Size="267,42"
+          Id="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych miejsc przestępstw"
+          TopLeft="92,520" />
+        <EdgeLayout
+          Id="Package\Uzuełnianie danych dozwolonych.Paths[Flat File Source Output5]"
+          TopLeft="225.75,461">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59"
+              Start="0,0"
+              End="0,51.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Uzuełnianie danych dozwolonych\Dozwolone bronie"
+          TopLeft="447,426" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Uzuełnianie danych dozwolonych\OLE DB Destination"
+          TopLeft="437,524" />
+        <EdgeLayout
+          Id="Package\Uzuełnianie danych dozwolonych.Paths[Flat File Source Output6]"
+          TopLeft="525.5,468">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56"
+              Start="0,0"
+              End="0,48.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="191,42"
+          Id="Package\Uzuełnianie danych dozwolonych\Dozwolone poddzielnice"
+          TopLeft="379,37" />
+        <EdgeLayout
+          Id="Package\Uzuełnianie danych dozwolonych.Paths[Flat File Source Output7]"
+          TopLeft="477.25,79">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58"
+              Start="0,0"
+              End="0,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych dzielnic">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych poddzielnic">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych spraw">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych opisów przestepstw">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych pochodzeń">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych linii metra">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Uzuełnianie danych dozwolonych\Tabela dozwolonych miejsc przestępstw">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Uzuełnianie danych dozwolonych\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
