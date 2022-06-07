@@ -2,8 +2,9 @@
 -- DimTime
 CREATE TABLE [dbo].[DimTime](
 	TimeID INT IDENTITY(1, 1) PRIMARY KEY,
-	[Time] TIME
+	[Time] TIME UNIQUE
 );
+
 
 -- DROP TABLE DimTime;
 
@@ -16,8 +17,10 @@ CREATE TABLE DimVictim(
 	Age INT NULL,
 	Sex NCHAR(1) NULL,
 	Descent NVARCHAR(40) NULL,
-	DescentSymbol NCHAR(1) NULL
-	CONSTRAINT all_u_v UNIQUE(Age, Sex, Descent, DescentSymbol)
+	DescentSymbol NCHAR(1) NULL,
+	CONSTRAINT all_u_v UNIQUE(Age, Sex, Descent, DescentSymbol),
+	CONSTRAINT age_betw CHECK(Age BETWEEN 1 AND 120),
+	CONSTRAINT sex_in CHECK(Sex IN ('M', 'F'))
 );
 
 -- DimWeapon
@@ -54,12 +57,16 @@ CREATE TABLE DimCoegzistingCrime(
 -- DimLocation
 CREATE TABLE DimLocation(
 	LocationID INT IDENTITY(1, 1) PRIMARY KEY,
-	AreaCode INT NULL,
+	AreaCode INT,
 	AreaName NVARCHAR(20),
 	SubareaCode INT NULL,
 	Latitude REAL NULL,
 	Longitude REAL NULL,
-	CONSTRAINT all_u_l UNIQUE(AreaCode, AreaName, SubareaCode, Latitude, Longitude)
+	CONSTRAINT all_u_l UNIQUE(AreaCode, AreaName, SubareaCode, Latitude, Longitude),
+	CONSTRAINT lon_range CHECK(Longitude BETWEEN -120 AND -100),
+	CONSTRAINT lat_range CHECK(Latitude BETWEEN 30 AND 40),
+	CONSTRAINT area_code_gt CHECK(AreaCode > 0),
+	CONSTRAINT subarea_code_gt CHECK(SubareaCode > 0)
 );
 
 -- DimPremis
