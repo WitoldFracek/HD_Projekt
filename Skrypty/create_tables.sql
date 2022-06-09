@@ -40,7 +40,7 @@ CREATE TABLE DimCase(
 -- DimCrimeDescription
 CREATE TABLE DimCrimeDescription(
 	CrimeDescriptionID INT IDENTITY(1, 1) PRIMARY KEY,
-	CrimeCode INT UNIQUE,
+	CrimeCode INT UNIQUE CHECK(CrimeCode >= 0),
 	CrimeDescription NVARCHAR(100) NULL UNIQUE
 );
 
@@ -83,10 +83,10 @@ CREATE TABLE DimMetroLine(
 
 -- FactCrime
 CREATE TABLE FactCrime(
-	OfficialFileNumber INT UNIQUE,
-	OccurenceTimeFK INT FOREIGN KEY REFERENCES DimTime(TimeID),
-	OccurenceDateFK DATETIME FOREIGN KEY REFERENCES DimDate(PK_Date),
-	ReportedDateFK DATETIME FOREIGN KEY REFERENCES DimDate(PK_Date),
+	OfficialFileNumber INT UNIQUE NOT NULL,
+	OccurenceTimeFK INT FOREIGN KEY REFERENCES DimTime(TimeID) NOT NULL,
+	OccurenceDateFK DATETIME FOREIGN KEY REFERENCES DimDate(PK_Date) NOT NULL,
+	ReportedDateFK DATETIME FOREIGN KEY REFERENCES DimDate(PK_Date) NOT NULL,
 	LocationFK INT FOREIGN KEY REFERENCES DimLocation(LocationID),
 	PremisFK INT FOREIGN KEY REFERENCES DimPremis(PremisID),
 	WeaponFK INT FOREIGN KEY REFERENCES DimWeapon(WeaponID),
@@ -107,6 +107,18 @@ DROP TABLE IF EXISTS DimCoegzistingCrime;
 DROP TABLE IF EXISTS DimLocation;
 DROP TABLE IF EXISTS DimPremis;
 DROP TABLE IF EXISTS DimCrimeDescription;
+
+DROP TABLE IF EXISTS AllowedAreas;
+DROP TABLE IF EXISTS AllowedCase;
+DROP TABLE IF EXISTS AllowedCrimeDescription;
+DROP TABLE IF EXISTS AllowedDescent;
+DROP TABLE IF EXISTS AllowedMetroLine;
+DROP TABLE IF EXISTS AllowedPremis;
+DROP TABLE IF EXISTS AllowedSubareaCode;
+DROP TABLE IF EXISTS AllowedWeapon;
+
+DROP TABLE TempDescent;
+SELECT * FROM TempLocation;
 
 DELETE FROM FactCrime;
 DELETE FROM DimVictim;
