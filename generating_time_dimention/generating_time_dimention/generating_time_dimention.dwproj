@@ -11,6 +11,10 @@
       <Name>DimDate.dim</Name>
       <FullPath>DimDate.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>AddDate.dim</Name>
+      <FullPath>AddDate.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>

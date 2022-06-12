@@ -11,6 +11,7 @@ SELECT
 		WHEN VictimDescent = 'G' THEN 'Guamanian'
 		WHEN VictimDescent = 'H' THEN 'Hispanic/Latin/Mexican'
 		WHEN VictimDescent = 'I' THEN 'American Indian/Alaskan Native'
+		WHEN VictimDescent = 'J' THEN 'Japanese'
 		WHEN VictimDescent = 'K' THEN 'Korean'
 		WHEN VictimDescent = 'L' THEN 'Laotian'
 		WHEN VictimDescent = 'O' THEN 'Other'
@@ -23,7 +24,7 @@ SELECT
 		WHEN VictimDescent = 'Z' THEN 'Asian Indian'
 		ELSE 'Unknown'
 	END AS NVARCHAR(40)) AS DescentDescription
-FROM TempDescent;
+FROM TempAllCrime;
 
 SELECT
 	PremisDescription,

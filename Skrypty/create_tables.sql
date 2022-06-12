@@ -93,7 +93,9 @@ CREATE TABLE FactCrime(
 	VictimFK INT FOREIGN KEY REFERENCES DimVictim(VictimID),
 	CaseFK INT FOREIGN KEY REFERENCES DimCase(CaseID),
 	CoegzistingCrimeFK INT FOREIGN KEY REFERENCES DimCoegzistingCrime(CoegzistingCrimeID),
-	MetroLineFK INT FOREIGN KEY REFERENCES DimMetroLine(MetroLineID)
+	MetroLineFK INT FOREIGN KEY REFERENCES DimMetroLine(MetroLineID),
+	CONSTRAINT od_le_rd_fact_crime CHECK(OccurenceDateFK <= ReportedDateFK),
+	CONSTRAINT rd_le_today_fact_crime CHECK(ReportedDateFK <= GETDATE())
 );
 
 SELECT TOP 100 * FROM DimDate;
