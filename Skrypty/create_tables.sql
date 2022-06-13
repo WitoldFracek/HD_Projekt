@@ -99,6 +99,7 @@ CREATE TABLE FactCrime(
 );
 
 SELECT TOP 100 * FROM DimDate;
+SELECT * FROM FactCrime;
 
 DROP TABLE IF EXISTS FactCrime;
 DROP TABLE IF EXISTS DimVictim;
