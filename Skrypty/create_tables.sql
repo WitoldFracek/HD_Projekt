@@ -79,7 +79,7 @@ CREATE TABLE DimPremis(
 CREATE TABLE DimMetroLine(
 	MetroLineID INT IDENTITY(1, 1) PRIMARY KEY,
 	Line NVARCHAR(10) UNIQUE
-)
+);
 
 -- FactCrime
 CREATE TABLE FactCrime(
@@ -190,3 +190,5 @@ SELECT * FROM DimLocation;
 SELECT * FROM DimCoegzistingCrime;
 SELECT * FROM FactCrime WHERE LocationFK IS NOT NULL;
 SELECT * FROM FactCrime WHERE VictimFK IS NOT NULL;
+
+SELECT TOP 1 * FROM DimDate;

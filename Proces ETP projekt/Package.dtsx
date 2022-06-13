@@ -12,8 +12,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="222"
-  DTS:VersionGUID="{F3A3C82B-D4D2-4AC9-B217-E255CCF90460}">
+  DTS:VersionBuild="223"
+  DTS:VersionGUID="{B90E2229-BFC3-447D-9F31-33A3D71A28D7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -19229,8 +19229,8 @@ where [refTable].[CaseStatus] = ?</property>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{11F6B914-1E76-4408-9E5B-01F746A2D048}"
-          DTS:ObjectName="{11F6B914-1E76-4408-9E5B-01F746A2D048}"
+          DTS:DTSID="{ABB7E128-8459-4C2A-A84F-F6D8439E5745}"
+          DTS:ObjectName="{ABB7E128-8459-4C2A-A84F-F6D8439E5745}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::FileName" />
       </DTS:ForEachVariableMappings>
