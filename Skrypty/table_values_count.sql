@@ -1,0 +1,11 @@
+SELECT COUNT(*) AS [Coegzisting Crime] FROM DimCoegzistingCrime;
+SELECT COUNT(*) AS [Case] FROM DimCase;
+SELECT COUNT(*) AS [Crime Description] FROM DimCrimeDescription;
+SELECT COUNT(*) AS [Date] FROM DimDate;
+SELECT COUNT(*) AS [Location] FROM DimLocation;
+SELECT COUNT(*) AS [Metro Line] FROM DimMetroLine;
+SELECT COUNT(*) AS [Premis] FROM DimPremis;
+SELECT COUNT(*) AS [Time] FROM DimTime;
+SELECT COUNT(*) AS [Victim] FROM DimVictim;
+SELECT COUNT(*) AS [Weapon] FROM DimWeapon;
+SELECT COUNT(*) AS [Fact] FROM FactCrime;

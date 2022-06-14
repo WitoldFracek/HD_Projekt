@@ -96,7 +96,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>tc7fQGQWXAOwvs8/6LssV/9RtjU=14.06.2022 02:18:3805.06.2022 12:55:26otw7+NiNdxZONVUEcHAPIY0FbuI=05.06.2022 12:55:2605.06.2022 12:55:26</TimeStamp>
+        <TimeStamp>sHIcraSfRW9OMKsytAdTJj9W+8o=14.06.2022 11:15:5605.06.2022 12:55:26303NwhLnZakJ69otnYeGNOkCAew=14.06.2022 11:09:3205.06.2022 12:55:26</TimeStamp>
         <ID>
           <String>Przestępstwa Los Angeles</String>
         </ID>
@@ -113,5 +113,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2022-06-14T00:19:07.036667Z</LastDeployed>
+  <LastDeployed>2022-06-14T09:16:03.71Z</LastDeployed>
 </DeploymentSnapshot>
