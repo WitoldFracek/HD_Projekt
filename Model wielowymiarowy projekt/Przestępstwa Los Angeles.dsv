@@ -1,4 +1,4 @@
-﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="460a4036-c073-44c0-a496-c5cd4edb1b4e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7096d4f1-159c-4d41-9ea6-bf79dc4e7cf7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Przestępstwa Los Angeles</ID>
   <Name>Przestępstwa Los Angeles</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -27,7 +27,7 @@
             <Name>_ALL_TABLES_</Name>
             <DiagramLayout>
               <dds>
-                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="52" scale="100" pagebreakanchorx="-1883" pagebreakanchory="-5251" pagebreaksizex="21002" pagebreaksizey="29066" scrollleft="-6943" scrolltop="-2904" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="89" x="37862" y="22701" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="52" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6943" scrolltop="-2904" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="89" x="31300" y="17357" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                   <font>
                     <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
                   </font>
@@ -614,13 +614,15 @@
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="WeekDayName" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="CASE&#xD;&#xA;&#x9;&#x9;WHEN Day_Of_Week = 1 THEN 'Niedziela'&#xD;&#xA;&#x9;&#x9;WHEN Day_Of_Week = 2 THEN 'Poniedziałek'&#xD;&#xA;&#x9;&#x9;WHEN Day_Of_Week = 3 THEN 'Wtorek'&#xD;&#xA;&#x9;&#x9;WHEN Day_Of_Week = 4 THEN 'Środa'&#xD;&#xA;&#x9;&#x9;WHEN Day_Of_Week = 5 THEN 'Czwartek'&#xD;&#xA;&#x9;&#x9;WHEN Day_Of_Week = 6 THEN 'Piątek'&#xD;&#xA;&#x9;&#x9;WHEN Day_Of_Week = 7 THEN 'Sobota'&#xD;&#xA;&#x9;END" msprop:IsLogical="True" msprop:design-time-name="bbd9007f-efb7-47cc-96f5-9c7ee3c2cd13" msprop:DbColumnName="WeekDayName" minOccurs="0">
+                  <xs:element name="WeekDayName" msdata:ReadOnly="true" msprop:design-time-name="bbd9007f-efb7-47cc-96f5-9c7ee3c2cd13" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="WeekDayName" msprop:ComputedColumnExpression="CASE&#xD;&#xA;&#x9;&#x9;WHEN Day_Of_Week = 1 THEN 'Niedziela'&#xD;&#xA;&#x9;&#x9;WHEN Day_Of_Week = 2 THEN 'Poniedziałek'&#xD;&#xA;&#x9;&#x9;WHEN Day_Of_Week = 3 THEN 'Wtorek'&#xD;&#xA;&#x9;&#x9;WHEN Day_Of_Week = 4 THEN 'Środa'&#xD;&#xA;&#x9;&#x9;WHEN Day_Of_Week = 5 THEN 'Czwartek'&#xD;&#xA;&#x9;&#x9;WHEN Day_Of_Week = 6 THEN 'Piątek'&#xD;&#xA;&#x9;&#x9;WHEN Day_Of_Week = 7 THEN 'Sobota'&#xD;&#xA;&#x9;END" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="12" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
+                  <xs:element name="Rok" msdata:ReadOnly="true" msprop:design-time-name="4c785f04-a73a-41d1-a426-eb050fa1ae7a" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="Rok" msprop:ComputedColumnExpression="DATEPART(YEAR, PK_Date)" type="xs:int" minOccurs="0" />
+                  <xs:element name="Miesiąc" msdata:ReadOnly="true" msprop:design-time-name="b21508ec-9077-4fd8-8248-9a4312620509" msprop:IsLogical="True" msprop:FriendlyName="Miesiąc" msprop:Description="" msprop:DbColumnName="Miesiąc" msprop:ComputedColumnExpression="DATEPART(MONTH, PK_Date)" type="xs:int" minOccurs="0" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
@@ -691,6 +693,7 @@
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
+                  <xs:element name="Hour" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="DATEPART(HOUR, Time)" msprop:IsLogical="True" msprop:design-time-name="ab2f948b-02c5-48fa-9aef-101f82a4a94f" msprop:DbColumnName="Hour" type="xs:int" minOccurs="0" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
@@ -807,61 +810,61 @@
           <xs:selector xpath=".//dbo_FactCrime" />
           <xs:field xpath="OfficialFileNumber" />
         </xs:unique>
-        <xs:keyref name="FK__FactCrime__Weapo__118A8A8C" refer="dbo_DimWeapon_Constraint1">
+        <xs:keyref name="FK__FactCrime__Occur__0DB9F9A8" refer="dbo_DimDate_Constraint1">
           <xs:selector xpath=".//dbo_FactCrime" />
-          <xs:field xpath="WeaponFK" />
-        </xs:keyref>
-        <xs:keyref name="FK__FactCrime__Occur__0CC5D56F" refer="dbo_DimTime_Constraint1">
-          <xs:selector xpath=".//dbo_FactCrime" />
-          <xs:field xpath="OccurenceTimeFK" />
-        </xs:keyref>
-        <xs:keyref name="FK__FactCrime__Premi__10966653" refer="dbo_DimPremis_Constraint1">
-          <xs:selector xpath=".//dbo_FactCrime" />
-          <xs:field xpath="PremisFK" />
-        </xs:keyref>
-        <xs:keyref name="FK__FactCrime__Metro__155B1B70" refer="dbo_DimMetroLine_Constraint1">
-          <xs:selector xpath=".//dbo_FactCrime" />
-          <xs:field xpath="MetroLineFK" />
-        </xs:keyref>
-        <xs:keyref name="FK__FactCrime__CaseF__1372D2FE" refer="Constraint1">
-          <xs:selector xpath=".//dbo_FactCrime" />
-          <xs:field xpath="CaseFK" />
-        </xs:keyref>
-        <xs:keyref name="FK__FactCrime__Repor__0EAE1DE1" refer="dbo_DimDate_Constraint1">
-          <xs:selector xpath=".//dbo_FactCrime" />
-          <xs:field xpath="ReportedDateFK" />
-        </xs:keyref>
-        <xs:keyref name="FK__FactCrime__Locat__0FA2421A" refer="dbo_DimLocation_Constraint1">
-          <xs:selector xpath=".//dbo_FactCrime" />
-          <xs:field xpath="LocationFK" />
-        </xs:keyref>
-        <xs:keyref name="FK__FactCrime__Victi__127EAEC5" refer="dbo_DimVictim_Constraint1">
-          <xs:selector xpath=".//dbo_FactCrime" />
-          <xs:field xpath="VictimFK" />
+          <xs:field xpath="OccurenceDateFK" />
         </xs:keyref>
         <xs:keyref name="FK__FactCrime__Coegz__1466F737" refer="dbo_DimCoegzistingCrime_Constraint1">
           <xs:selector xpath=".//dbo_FactCrime" />
           <xs:field xpath="CoegzistingCrimeFK" />
         </xs:keyref>
-        <xs:keyref name="FK__FactCrime__Occur__0DB9F9A8" refer="dbo_DimDate_Constraint1">
+        <xs:keyref name="FK__FactCrime__Victi__127EAEC5" refer="dbo_DimVictim_Constraint1">
           <xs:selector xpath=".//dbo_FactCrime" />
-          <xs:field xpath="OccurenceDateFK" />
+          <xs:field xpath="VictimFK" />
         </xs:keyref>
-        <xs:keyref name="FK__DimCoegzi__Crime__015422C3" refer="dbo_DimCrimeDescription_Constraint1">
-          <xs:selector xpath=".//dbo_DimCoegzistingCrime" />
-          <xs:field xpath="CrimeCode4" />
+        <xs:keyref name="FK__FactCrime__Locat__0FA2421A" refer="dbo_DimLocation_Constraint1">
+          <xs:selector xpath=".//dbo_FactCrime" />
+          <xs:field xpath="LocationFK" />
         </xs:keyref>
-        <xs:keyref name="FK__DimCoegzi__Crime__005FFE8A" refer="dbo_DimCrimeDescription_Constraint1">
+        <xs:keyref name="FK__FactCrime__Repor__0EAE1DE1" refer="dbo_DimDate_Constraint1">
+          <xs:selector xpath=".//dbo_FactCrime" />
+          <xs:field xpath="ReportedDateFK" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactCrime__CaseF__1372D2FE" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FactCrime" />
+          <xs:field xpath="CaseFK" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactCrime__Metro__155B1B70" refer="dbo_DimMetroLine_Constraint1">
+          <xs:selector xpath=".//dbo_FactCrime" />
+          <xs:field xpath="MetroLineFK" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactCrime__Premi__10966653" refer="dbo_DimPremis_Constraint1">
+          <xs:selector xpath=".//dbo_FactCrime" />
+          <xs:field xpath="PremisFK" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactCrime__Occur__0CC5D56F" refer="dbo_DimTime_Constraint1">
+          <xs:selector xpath=".//dbo_FactCrime" />
+          <xs:field xpath="OccurenceTimeFK" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactCrime__Weapo__118A8A8C" refer="dbo_DimWeapon_Constraint1">
+          <xs:selector xpath=".//dbo_FactCrime" />
+          <xs:field xpath="WeaponFK" />
+        </xs:keyref>
+        <xs:keyref name="FK__DimCoegzi__Crime__7F6BDA51" refer="dbo_DimCrimeDescription_Constraint1">
           <xs:selector xpath=".//dbo_DimCoegzistingCrime" />
-          <xs:field xpath="CrimeCode3" />
+          <xs:field xpath="CrimeCode2" />
         </xs:keyref>
         <xs:keyref name="FK__DimCoegzi__Crime__7E77B618" refer="dbo_DimCrimeDescription_Constraint1">
           <xs:selector xpath=".//dbo_DimCoegzistingCrime" />
           <xs:field xpath="CrimeCode1" />
         </xs:keyref>
-        <xs:keyref name="FK__DimCoegzi__Crime__7F6BDA51" refer="dbo_DimCrimeDescription_Constraint1">
+        <xs:keyref name="FK__DimCoegzi__Crime__005FFE8A" refer="dbo_DimCrimeDescription_Constraint1">
           <xs:selector xpath=".//dbo_DimCoegzistingCrime" />
-          <xs:field xpath="CrimeCode2" />
+          <xs:field xpath="CrimeCode3" />
+        </xs:keyref>
+        <xs:keyref name="FK__DimCoegzi__Crime__015422C3" refer="dbo_DimCrimeDescription_Constraint1">
+          <xs:selector xpath=".//dbo_DimCoegzistingCrime" />
+          <xs:field xpath="CrimeCode4" />
         </xs:keyref>
       </xs:element>
     </xs:schema>

@@ -50,18 +50,24 @@ SELECT
 	CAST(Longitude * 10000 AS INT) AS LonInt
 FROM DimLocation;
 
-INSERT INTO DimLocation VALUES(1, 'a', 2, 9.33546562532, -7.34323415431);
-SELECT Latitude FROM TempAllCrime;
+SELECT
+	DATEPART(YEAR, PK_Date)
+FROM DimDate;
 
+SELECT
+	DATEPART(MONTH, PK_Date)
+FROM DimDate;
 
-SELECT * FROM DimVictim;
-DELETE DimVictim;
-INSERT INTO DimVictim VALUES(22, 'M', 'White');
-INSERT INTO DimVictim VALUES(22, 'F', 'White');
-INSERT INTO DimVictim VALUES(22, 'M', 'White');
-INSERT INTO DimVictim VALUES(23, 'M', 'White');
+SELECT
+	DATEPART(HOUR, Time)
+FROM DimTime;
 
-DELETE FROM DimVictim WHERE Sex = 'M';
+SELECT * FROM DimCrimeDescription
+ORDER BY CrimeDescription;
 
-SELECT * FROM DimMetroLine;
-SELECT * FROM DimPremis;
+SELECT * FROM FactCrime FC
+JOIN DimCoegzistingCrime CC ON FC.CaseFK = CC.CoegzistingCrimeID
+JOIN DimCrimeDescription CD ON CC.CrimeCode1 = CD.CrimeDescriptionID
+
+SELECT * FROM FactCrime FC
+JOIN DimWeapon W ON FC.WeaponFK = W.WeaponID;
